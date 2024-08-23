@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+
+<!-- Mirrored from sugar.fp.nsn-rdnet.net/wiki/index.php/Maven_Guide by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 23 Aug 2024 04:56:15 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>Maven Guide - SugarWiki</title>
+<meta charset="UTF-8" />
+<meta name="generator" content="MediaWiki 1.21.1" />
+<link rel="alternate" type="application/x-wiki" title="Edit" href="../indexe693.html?title=Maven_Guide&amp;action=edit" />
+<link rel="edit" title="Edit" href="../indexe693.html?title=Maven_Guide&amp;action=edit" />
+<link rel="shortcut icon" href="http://sugar.fp.nsn-rdnet.net/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="../opensearch_desc.html" title="SugarWiki (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="../api251f.html?action=rsd" />
+<link rel="alternate" type="application/atom+xml" title="SugarWiki Atom feed" href="../index890f.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="../load5c1d.html?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cskins.monobook&amp;only=styles&amp;skin=monobook&amp;*" />
+<!--[if IE 6]><link rel="stylesheet" href="/wiki/skins/monobook/IE60Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="/wiki/skins/monobook/IE70Fixes.css?303" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="../load484a.html?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook&amp;*" />
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: wikidb:resourceloader:filter:minify-css:7:7a3748d34e6456ae8d0f053363f745f7 */</style>
+
+<script src="../load9316.html?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Maven_Guide","wgTitle":"Maven Guide","wgCurRevisionId":8633,"wgArticleId":1747,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Maven_Guide","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"monobook","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,"watchlistdays":3,
+"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: wikidb:resourceloader:filter:minify-js:7:a02a7fa766593347c4dbb130a7c3803e */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Maven_Guide skin-monobook action-view">
+<div id="globalWrapper">
+<div id="column-content"><div id="content" class="mw-body-primary" role="main">
+	<a id="top"></a>
+	
+	<h1 id="firstHeading" class="firstHeading" lang="en"><span dir="auto">Maven Guide</span></h1>
+	<div id="bodyContent" class="mw-body">
+		<div id="siteSub">From SugarWiki</div>
+		<div id="contentSub"></div>
+		<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+		<!-- start content -->
+<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Common_instructions"><span class="tocnumber">1</span> <span class="toctext">Common instructions</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Versioning"><span class="tocnumber">1.1</span> <span class="toctext">Versioning</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Testing"><span class="tocnumber">1.2</span> <span class="toctext">Testing</span></a>
+<ul>
+<li class="toclevel-3 tocsection-4"><a href="#Unit_testing"><span class="tocnumber">1.2.1</span> <span class="toctext">Unit testing</span></a></li>
+<li class="toclevel-3 tocsection-5"><a href="#Integration_testing"><span class="tocnumber">1.2.2</span> <span class="toctext">Integration testing</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Plugins"><span class="tocnumber">2</span> <span class="toctext">Plugins</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#Clirr"><span class="tocnumber">2.1</span> <span class="toctext">Clirr</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Dependency_plugin"><span class="tocnumber">2.2</span> <span class="toctext">Dependency plugin</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Changelog_plugin"><span class="tocnumber">2.3</span> <span class="toctext">Changelog plugin</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Help_plugin"><span class="tocnumber">2.4</span> <span class="toctext">Help plugin</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Versions_plugin"><span class="tocnumber">2.5</span> <span class="toctext">Versions plugin</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Javadoc_plugin"><span class="tocnumber">2.6</span> <span class="toctext">Javadoc plugin</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-13"><a href="#Create_component_releases"><span class="tocnumber">3</span> <span class="toctext">Create component releases</span></a>
+<ul>
+<li class="toclevel-2 tocsection-14"><a href="#Release_single_component"><span class="tocnumber">3.1</span> <span class="toctext">Release single component</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Releasing_parent_artifact_individually"><span class="tocnumber">3.2</span> <span class="toctext">Releasing parent artifact individually</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#Releasing_multi-module_project"><span class="tocnumber">3.3</span> <span class="toctext">Releasing multi-module project</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#Tips_.26_tricks"><span class="tocnumber">3.4</span> <span class="toctext">Tips &amp; tricks</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-18"><a href="#Profiles"><span class="tocnumber">4</span> <span class="toctext">Profiles</span></a>
+<ul>
+<li class="toclevel-2 tocsection-19"><a href="#Project_specific_profiles"><span class="tocnumber">4.1</span> <span class="toctext">Project specific profiles</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="#Host_specific_profiles"><span class="tocnumber">4.2</span> <span class="toctext">Host specific profiles</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="#3rd_party_product_specific_profiles"><span class="tocnumber">4.3</span> <span class="toctext">3rd party product specific profiles</span></a></li>
+<li class="toclevel-2 tocsection-22"><a href="#External_hosts"><span class="tocnumber">4.4</span> <span class="toctext">External hosts</span></a></li>
+<li class="toclevel-2 tocsection-23"><a href="#Currently_reserved_properties"><span class="tocnumber">4.5</span> <span class="toctext">Currently reserved properties</span></a></li>
+<li class="toclevel-2 tocsection-24"><a href="#AOP_profiles"><span class="tocnumber">4.6</span> <span class="toctext">AOP profiles</span></a>
+<ul>
+<li class="toclevel-3 tocsection-25"><a href="#Trace_logging"><span class="tocnumber">4.6.1</span> <span class="toctext">Trace logging</span></a></li>
+<li class="toclevel-3 tocsection-26"><a href="#Profiling_aspect"><span class="tocnumber">4.6.2</span> <span class="toctext">Profiling aspect</span></a>
+<ul>
+<li class="toclevel-4 tocsection-27"><a href="#Unit_tests"><span class="tocnumber">4.6.2.1</span> <span class="toctext">Unit tests</span></a></li>
+<li class="toclevel-4 tocsection-28"><a href="#Runtime"><span class="tocnumber">4.6.2.2</span> <span class="toctext">Runtime</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-29"><a href="#Tips_.26_tricks_2"><span class="tocnumber">4.6.3</span> <span class="toctext">Tips &amp; tricks</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-30"><a href="#Animal_sniffer_.28JDK_dependency_verification.29"><span class="tocnumber">4.7</span> <span class="toctext">Animal sniffer (JDK dependency verification)</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-31"><a href="#Continuous_Integration"><span class="tocnumber">5</span> <span class="toctext">Continuous Integration</span></a>
+<ul>
+<li class="toclevel-2 tocsection-32"><a href="#Hudson"><span class="tocnumber">5.1</span> <span class="toctext">Hudson</span></a></li>
+<li class="toclevel-2 tocsection-33"><a href="#Continuum"><span class="tocnumber">5.2</span> <span class="toctext">Continuum</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-34"><a href="#Repositories"><span class="tocnumber">6</span> <span class="toctext">Repositories</span></a>
+<ul>
+<li class="toclevel-2 tocsection-35"><a href="#Maintenance"><span class="tocnumber">6.1</span> <span class="toctext">Maintenance</span></a></li>
+<li class="toclevel-2 tocsection-36"><a href="#Download_new_artifact"><span class="tocnumber">6.2</span> <span class="toctext">Download new artifact</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-37"><a href="#Links"><span class="tocnumber">7</span> <span class="toctext">Links</span></a></li>
+</ul>
+</td></tr></table>
+<h2><span class="editsection">[<a href="../index0573.html?title=Maven_Guide&amp;action=edit&amp;section=1" title="Edit section: Common instructions">edit</a>]</span> <span class="mw-headline" id="Common_instructions"> Common instructions </span></h2>
+<h3><span class="editsection">[<a href="../index1fc3.html?title=Maven_Guide&amp;action=edit&amp;section=2" title="Edit section: Versioning">edit</a>]</span> <span class="mw-headline" id="Versioning"> Versioning </span></h3>
+<ul><li>All TFRM projects must use tfrm-parent as a parent. Otherwise common settings won't get inherited. In some special cases when you cannot put dependency to tfrm-parent (for examples projects which tfrm-parent depends of) then use tfrm-parent-parent.
+</li><li>Use 3 number versioning (1.0.0) scheme for components which have sources
+</li><li>Use 1 number versioning (1) scheme for components which don't have sources or doesn't support concept of minor/bugfix release.
+</li></ul>
+<h3><span class="editsection">[<a href="../index619f.html?title=Maven_Guide&amp;action=edit&amp;section=3" title="Edit section: Testing">edit</a>]</span> <span class="mw-headline" id="Testing"> Testing </span></h3>
+<h4><span class="editsection">[<a href="../index33da.html?title=Maven_Guide&amp;action=edit&amp;section=4" title="Edit section: Unit testing">edit</a>]</span> <span class="mw-headline" id="Unit_testing">Unit testing</span></h4>
+<ul><li>Use unit tests to test the functionality of the module. Unit tests are suitable for testing which requires no setup or setup that can be done without manual work and is portable between environments. Profiles can be also utilized.
+</li><li>Unit tests can have dependencies between projects. If some component's logic essentially depends of some other component then be it. Setup will be just a bit more complex. This shouldn't be a problem. In complex cases you can also use mocking.
+</li><li>Prefer JUnit4 and use annotations
+</li><li>TestNG can be also used: <a rel="nofollow" class="external autonumber" href="http://testng.org/doc/">[1]</a>, <a rel="nofollow" class="external autonumber" href="http://maven.apache.org/plugins/maven-surefire-plugin/examples/testng.html">[2]</a>. It is useful tool if you want to run unit tests in parallel with multiple threads.
+</li><li>Keep things simple! Having tests more complex than the actual code which it is testing is not the way to go.
+</li><li>Unit test should not cause any side effects and they should be executable in any order.
+</li><li>Unit tests are not suitable for complex performance/stress testing.
+</li><li>Utilize helper classes from tfrm-util (com.nokia.flexi.tfrm.util.test).
+</li></ul>
+<h4><span class="editsection">[<a href="../index1fb5.html?title=Maven_Guide&amp;action=edit&amp;section=5" title="Edit section: Integration testing">edit</a>]</span> <span class="mw-headline" id="Integration_testing">Integration testing</span></h4>
+<ul><li>Use integration tests only if absolutely necessary. Those usually end up having duplicate code with unit tests and just increases maintenance burden. 
+</li><li>Currently Maven also has limited support for integration tests and this should be improved with 2.1 release.
+</li><li>Check how Geronimo does integration testing <a rel="nofollow" class="external autonumber" href="http://cwiki.apache.org/GMOxDEV/integration-testing.html">[3]</a>. It tests how existing external projects can be integrated with it.
+</li></ul>
+<h2><span class="editsection">[<a href="../indexea1a.html?title=Maven_Guide&amp;action=edit&amp;section=6" title="Edit section: Plugins">edit</a>]</span> <span class="mw-headline" id="Plugins"> Plugins </span></h2>
+<h3><span class="editsection">[<a href="../index92d2.html?title=Maven_Guide&amp;action=edit&amp;section=7" title="Edit section: Clirr">edit</a>]</span> <span class="mw-headline" id="Clirr"> Clirr </span></h3>
+<ul><li>Integrated to build lifecycle with tfrm-parent. Can be executed manually with clirr:check.
+</li><li>Set version range to property "previous.compatible.version". It is by default "(,${project.version})". For example
+</li></ul>
+<pre>&lt;project ...&gt;
+  ...
+  &lt;properties&gt;
+    &lt;previous.compatible.version&gt;1.0.0&lt;/previous.compatible.version&gt;
+  &lt;/properties&gt; 
+&lt;/project&gt;
+</pre>
+<ul><li>For more information about version ranges check <a rel="nofollow" class="external text" href="http://maven.apache.org/plugins/maven-enforcer-plugin/rules/versionRanges.html">version range specs</a>
+</li><li>Clirr plugin will print out errors/warnings if it notices incompatibilities. This usually means that you should increment atleast minor version number, when you make release next time. It won't fail build process currently.
+</li></ul>
+<h3><span class="editsection">[<a href="../indexe4dc.html?title=Maven_Guide&amp;action=edit&amp;section=8" title="Edit section: Dependency plugin">edit</a>]</span> <span class="mw-headline" id="Dependency_plugin"> Dependency plugin </span></h3>
+<ul><li>See dependencies of some component
+</li></ul>
+<pre>mvn dependency:resolve
+</pre>
+<ul><li>Analyze dependencies
+</li></ul>
+<pre>mvn dependency:analyze
+mvn dependency:analyze-dep-mgt
+</pre>
+<ul><li>See constructed classpath
+</li></ul>
+<pre>mvn dependency:build-classpath
+</pre>
+<h3><span class="editsection">[<a href="../index860b.html?title=Maven_Guide&amp;action=edit&amp;section=9" title="Edit section: Changelog plugin">edit</a>]</span> <span class="mw-headline" id="Changelog_plugin"> Changelog plugin </span></h3>
+<ul><li>Check changelog
+</li></ul>
+<pre>mvn changelog:changelog
+mvn changelog:dev-activity
+mvn changelog:file-activity
+</pre>
+<h3><span class="editsection">[<a href="../index4f54.html?title=Maven_Guide&amp;action=edit&amp;section=10" title="Edit section: Help plugin">edit</a>]</span> <span class="mw-headline" id="Help_plugin"> Help plugin </span></h3>
+<ul><li>See effective settings
+</li></ul>
+<pre>mvn help:effective-settings
+</pre>
+<ul><li>See current profiles
+</li></ul>
+<pre>mvn help:active-profiles
+</pre>
+<ul><li>See effective POM
+</li></ul>
+<pre>mvn help:effective-pom
+</pre>
+<h3><span class="editsection">[<a href="../index0090.html?title=Maven_Guide&amp;action=edit&amp;section=11" title="Edit section: Versions plugin">edit</a>]</span> <span class="mw-headline" id="Versions_plugin"> Versions plugin </span></h3>
+<ul><li>Check are there updates available for used depencencies
+</li></ul>
+<pre>mvn versions:display-dependency-updates -Dorg.apache.maven.global-settings=$HOME/.m2/settings.xml
+</pre>
+<ul><li>Check are there updates available for used plugin depencencies
+</li></ul>
+<pre>mvn versions:display-plugin-updates -Dorg.apache.maven.global-settings=$HOME/.m2/settings.xml
+</pre>
+<p>Note that we need to disable the use of internal repository settings. Easiest way to do that is to use own user-level config as a global config.
+</p><p>You may need to delete your own local repository to get to correct results. Maven caches repository metadata files, and the ones which are cached from flexiaf6 won't show the latest info.
+</p>
+<h3><span class="editsection">[<a href="../indexb537.html?title=Maven_Guide&amp;action=edit&amp;section=12" title="Edit section: Javadoc plugin">edit</a>]</span> <span class="mw-headline" id="Javadoc_plugin"> Javadoc plugin </span></h3>
+<ul><li>To generate aggreate api docs you need to go to the multi-module project and:
+</li></ul>
+<pre>mvn javadoc:aggregate
+mvn site-deploy -N
+</pre>
+<p>Note: generated docs aren't linked to the project reports so you need to navigate there manually. These instruction will be deprecated when maven-javadoc-plugin issues related to aggregate reporting are fixed.
+</p>
+<h2><span class="editsection">[<a href="../indexfbe0.html?title=Maven_Guide&amp;action=edit&amp;section=13" title="Edit section: Create component releases">edit</a>]</span> <span class="mw-headline" id="Create_component_releases"> Create component releases </span></h2>
+<ul><li>Note: always use release-plugin version 2.0-beta-8
+</li></ul>
+<h3><span class="editsection">[<a href="../index64a0.html?title=Maven_Guide&amp;action=edit&amp;section=14" title="Edit section: Release single component">edit</a>]</span> <span class="mw-headline" id="Release_single_component"> Release single component </span></h3>
+<ul><li>Update POM and remove all SNAPSHOT dependencies.
+</li><li>Use Clirr to check API/binary incompatibilities. Based on the results choose how to increment your component version.
+</li><li>Prepare release
+</li></ul>
+<pre>mvn release:prepare 
+</pre>
+<p>In most cases you can answer by pressing &lt;RET&gt; to all questions.
+</p>
+<pre>What is the release version for "TFRM Checkstyle Configuration"? (com.nokia.flexi.tfrm:tfrm-checkstyle) 1:&#160;:
+What is SCM release tag or label for "TFRM Checkstyle Configuration"? (com.nokia.flexi.tfrm:tfrm-checkstyle) tfrm-checkstyle-1:&#160;:
+What is the new development version for "TFRM Checkstyle Configuration"? (com.nokia.flexi.tfrm:tfrm-checkstyle) 2-SNAPSHOT:&#160;:
+</pre>
+<p>You can use "-DdryRun=true" to test it without committing anything.
+</p>
+<ul><li>Publish release to internal repository
+</li></ul>
+<pre>mvn release:perform
+</pre>
+<h3><span class="editsection">[<a href="../indexbd89.html?title=Maven_Guide&amp;action=edit&amp;section=15" title="Edit section: Releasing parent artifact individually">edit</a>]</span> <span class="mw-headline" id="Releasing_parent_artifact_individually"> Releasing parent artifact individually </span></h3>
+<ul><li>If you are releasing parent project individually but you don't have separate directory for the POM (for example com.nokia.flexi.tfrm.util:tfrm-util).
+</li><li>Otherwise like single component releasing, but (<b>did not work with maven-release-plugin-2.0, use old instruction below</b>):
+</li></ul>
+<pre>mvn -N -Darguments=-N release:prepare
+mvn -N -Darguments=-N release:perform
+</pre>
+<p>Old manual way if above does not work:
+</p>
+<ul><li>Prepare pom.xml for release by removing SNAPSHOT from it's version and fixing SCM links to point to the correct tag directory.
+</li><li>Commit (svn commit -m "Prepare the release of &lt;artifact-id&gt;)"
+</li><li>Create directory for tag using naming convention: &lt;artifact-id&gt;-&lt;version&gt; to /tags
+</li><li>Copy pom.xml there (svn copy pom.xml ../tags/&lt;artifact-id&gt;-&lt;version&gt;)
+</li><li>Commit (svn commit ../tags/&lt;artifact-id&gt;-&lt;version&gt; -m "Copy to tag &lt;artifact-id&gt;-&lt;version&gt;".
+</li><li>Increment version from pom.xml in trunk and fix SCM links point to trunk
+</li><li>Commit (svn commit -m "Prepare for next development iteration)
+</li><li>Deploy (cd ../tags/&lt;artifact-id&gt;-&lt;version&gt;; mvn install deploy -N)
+</li></ul>
+<h3><span class="editsection">[<a href="../index3579.html?title=Maven_Guide&amp;action=edit&amp;section=16" title="Edit section: Releasing multi-module project">edit</a>]</span> <span class="mw-headline" id="Releasing_multi-module_project"> Releasing multi-module project </span></h3>
+<ul><li> If you are lucky, release multi-module project is as easy as single component. Just do the release at top-level which you want to be the scope of single tag. If you want to have separate tag for parent and each subproject then see previous instruction about releasing artifacts individually.
+</li><li> Sometimes multimodule builds release:prepare will fail. When it fails you need to install "real" versions to local repository manually using partially transformed POMs and then continuing release process: 
+</li></ul>
+<pre>mvn release:prepare
+mvn install --no-plugin-updates -Prelease-debug,default-repositories,flexitaf-dev,flexiaf5-env,mysql-database,ssh-target-rivendell,telnet-target-rivendell,default-updates-policy
+mvn release:prepare
+mvn release:perform
+</pre>
+<h3><span class="editsection">[<a href="../indexbebd.html?title=Maven_Guide&amp;action=edit&amp;section=17" title="Edit section: Tips &amp; tricks">edit</a>]</span> <span class="mw-headline" id="Tips_.26_tricks"> Tips &amp; tricks </span></h3>
+<h2><span class="editsection">[<a href="../indexc96f.html?title=Maven_Guide&amp;action=edit&amp;section=18" title="Edit section: Profiles">edit</a>]</span> <span class="mw-headline" id="Profiles"> Profiles </span></h2>
+<p>The common profile configurations are stored to /twafs/utilities/maven/conf which is symlinked to all maven installations.
+</p><p>Following things are defined there:
+</p>
+<ul><li>Internal repository configurations
+</li><li>External repositories are redirected to flexiaf4
+</li><li>Server where deployed artifacts are transfered
+</li><li>Profiles for projects under development
+</li><li>Profiles for development environments
+</li><li>Profiles for 3rd party components
+</li><li>Profiles for external hosts used during testing
+</li></ul>
+<p>Additional profiles are inherited from parent projects. These include
+</p>
+<ul><li>Profiles to control AOP load-time weaving. Note: this is currently defined in com.nokia.flexi.flexitaf:flexitaf-core:pom. It will be moved to higher level at some point.
+</li></ul>
+<h3><span class="editsection">[<a href="../index7bb6.html?title=Maven_Guide&amp;action=edit&amp;section=19" title="Edit section: Project specific profiles">edit</a>]</span> <span class="mw-headline" id="Project_specific_profiles"> Project specific profiles </span></h3>
+<p>Available: flexitaf-dev
+</p>
+<h3><span class="editsection">[<a href="../index926a.html?title=Maven_Guide&amp;action=edit&amp;section=20" title="Edit section: Host specific profiles">edit</a>]</span> <span class="mw-headline" id="Host_specific_profiles"> Host specific profiles </span></h3>
+<p>Available: flexiaf4-env, flexiaf5-env
+</p>
+<h3><span class="editsection">[<a href="../index1ee4.html?title=Maven_Guide&amp;action=edit&amp;section=21" title="Edit section: 3rd party product specific profiles">edit</a>]</span> <span class="mw-headline" id="3rd_party_product_specific_profiles"> 3rd party product specific profiles </span></h3>
+<p>These profiles should be used to activate optional 3rd party dependencies, like specific databases, during testing.
+</p><p>Available: mysql-database
+</p>
+<h3><span class="editsection">[<a href="../index7c5f.html?title=Maven_Guide&amp;action=edit&amp;section=22" title="Edit section: External hosts">edit</a>]</span> <span class="mw-headline" id="External_hosts"> External hosts </span></h3>
+<p>These contain hardcoded protocol specific ips/usernames/password/etc which are sometimes required for testing, like FlexiPlatform clusters for flexitaf testing.
+</p><p>Available: rivendell-target
+</p>
+<h3><span class="editsection">[<a href="../index509f.html?title=Maven_Guide&amp;action=edit&amp;section=23" title="Edit section: Currently reserved properties">edit</a>]</span> <span class="mw-headline" id="Currently_reserved_properties"> Currently reserved properties </span></h3>
+<p>Properties:
+</p>
+<ul><li>tfrm.database.mysql.root-user.name: Root username for local mysql installation
+</li><li>tfrm.database.mysql.root-user.password: Root password for local mysql installation
+</li><li>tfrm.datasource.name: Name of the used datasource
+</li><li>tfrm.datasource.type: Type of the used datasource
+</li><li>tfrm.datasource.host: Host where the datasource is
+</li><li>tfrm.datasource.driver: Driver used to connect to the datasource
+</li><li>tfrm.datasource.user: Username used for connections to the datasource
+</li><li>tfrm.datasource.password: Password used for connections to the datasource
+</li><li>tfrm.datasource.url: Url to the datasource
+</li><li>external.lib.path: Path where external 3rd party libraries are stored which aren't maven artifacts (like p4a)
+</li><li>tfrm.target.ssh.ip: Ip for some target which has ssh protocol available in default port
+</li><li>tfrm.target.ssh.user: Username used for connections to the target
+</li><li>tfrm.target.ssh.password: Password used for connections to the target
+</li></ul>
+<p>These properties shouldn't be ever used directly in source codes. These are meant to be used in configuration files. If direct access is required check com.nokia.flexi.tfrm.util.test.TestEnvironment and com.nokia.flexi.tfrm.util.test.TestEnvironmentFactory classes which provide accessor methods for those.
+</p>
+<h3><span class="editsection">[<a href="../index663b.html?title=Maven_Guide&amp;action=edit&amp;section=24" title="Edit section: AOP profiles">edit</a>]</span> <span class="mw-headline" id="AOP_profiles"> AOP profiles </span></h3>
+<p>AOP profiles can be used to weave aspects to your already compiled libraries. Commons aspects are defined in tfrm-aspects projects.
+</p><p>Load-time weaving can be activated to test-phase using <b>test-loadtime-weaving</b> profile. It requires you to provide value for following property:
+</p>
+<ul><li>tfrm.test.aop.config: path where aop.xml can be located.
+</li></ul>
+<p>To enable load-time weaving in distribution packages you need to activate it using <b>loadtime-weaving</b> profile. It requires you to provide valui for following property:
+</p>
+<ul><li>tfrm.aop.config: path where aop.xml can be located.
+</li></ul>
+<p>For more information about aspects see: <a rel="nofollow" class="external autonumber" href="http://www.eclipse.org/aspectj/docs.php">[4]</a>
+</p><p>For more information about aop.xml configuration see: <a rel="nofollow" class="external autonumber" href="http://www.eclipse.org/aspectj/doc/released/devguide/ltw-configuration.html">[5]</a>
+</p>
+<h4><span class="editsection">[<a href="../index7661.html?title=Maven_Guide&amp;action=edit&amp;section=25" title="Edit section: Trace logging">edit</a>]</span> <span class="mw-headline" id="Trace_logging"> Trace logging </span></h4>
+<p>Trace logging aspect uses normal java logging to print entry and exit logs for method calls.
+</p><p>To enable trace logging you need to provide concrete implementation of AbstraceTrace aspect. It requires you to provide pointcut called <b>traceClass</b> which is used to defined the methods we want to trace. For example if we want to trace all methods from package <b>com.nokia.flexi.flexitaf.repository.testcase</b> we would create following aop.xml:
+</p>
+<pre>&lt;aspectj&gt;
+   &lt;aspects&gt;
+       &lt;concrete-aspect name="com.nokia.flexi.tfrm.a4virtan.TraceAspect" extends="com.nokia.flexi.tfrm.aspects.logging.AbstractTrace"&gt;
+           &lt;pointcut name="traceClass" expression="within(com.nokia.flexi.flexitaf.repository.testcase.*)"/&gt;
+       &lt;/concrete-aspect&gt;
+   &lt;/aspects&gt;
+   &lt;weaver&gt;
+       &lt;include within="com.nokia.flexi.flexitaf.repository.testcase.*"/&gt;
+   &lt;/weaver&gt;
+&lt;/aspectj&gt;
+</pre>
+<h4><span class="editsection">[<a href="../indexec7d.html?title=Maven_Guide&amp;action=edit&amp;section=26" title="Edit section: Profiling aspect">edit</a>]</span> <span class="mw-headline" id="Profiling_aspect"> Profiling aspect </span></h4>
+<p>Profiling aspect uses JETM to measure time spent in specific method calls.
+</p><p>To enable profiling you need to provide concrete implementation of AbstractJetmProfiler aspect. It requires you to provide following pointcuts:
+</p>
+<ul><li>profileClass: defines the methods we want to measure
+</li><li>profileScopePointcut: defines the scope (entry- and exit-point) of profiling. You have to ensure that program flow won't cause nested calls.
+</li></ul>
+<p>You can control Jetm renderer using following properties:
+</p>
+<ul><li>com.nokia.flexi.tfrm.aspects.profile.JetmProfiler.renderer: Selects which output renderer will be used for results. You can use either "text", which is default, or "html".
+</li><li>com.nokia.flexi.tfrm.aspects.profile.JetmProfiler.output: Selects path where output will be written. By default it will be written to stdout.
+</li></ul>
+<h5><span class="editsection">[<a href="../index0877.html?title=Maven_Guide&amp;action=edit&amp;section=27" title="Edit section: Unit tests">edit</a>]</span> <span class="mw-headline" id="Unit_tests"> Unit tests </span></h5>
+<p>For example if we want to make individual measurement for each unit test and measure performance of class com.nokia.flexi.flexitaf.repository.testcase.TestcaseCache we would create following aop.xml:
+</p>
+<pre>&lt;aspectj&gt;
+   &lt;aspects&gt;
+       &lt;concrete-aspect name="com.nokia.flexi.tfrm.ProfileAspect" extends="com.nokia.flexi.tfrm.aspects.profile.AbstractJetmProfiler"&gt;
+           &lt;pointcut name="profileClass" expression="within(com.nokia.flexi.flexitaf.repository.testcase.TestcaseCache)"/&gt;
+           &lt;pointcut name="profilerScopePointcut" expression="execution(@org.junit.Test * *(..))"/&gt;
+       &lt;/concrete-aspect&gt;
+   &lt;/aspects&gt;
+   &lt;weaver&gt;
+       &lt;include within="com.nokia.flexi.flexitaf.repository.testcase.*"/&gt;
+   &lt;/weaver&gt;
+&lt;/aspectj&gt;
+</pre>
+<h5><span class="editsection">[<a href="../index22c3.html?title=Maven_Guide&amp;action=edit&amp;section=28" title="Edit section: Runtime">edit</a>]</span> <span class="mw-headline" id="Runtime"> Runtime </span></h5>
+<p>If we want to measure performance in production environment of class com.nokia.flexi.flexitaf.health.impl.DefaultHealthManager at flexitaf-server side and class com.nokia.flexi.flexitaf.cli.CommandProcessor at flexitaf-cli side we would create following aop.xml:
+</p>
+<pre>&lt;aspectj&gt;
+    &lt;aspects&gt;
+        &lt;concrete-aspect name="com.nokia.flexi.flexitaf.aspects.ProfileAspect" extends="com.nokia.flexi.tfrm.aspects.profile.AbstractJetmProfiler"&gt;
+            &lt;pointcut name="profileClass" expression="within(com.nokia.flexi.flexitaf.cli.CommandProcessor) || within(com.nokia.flexi.flexitaf.health.impl.DefaultHealthManager)"/&gt;
+            &lt;pointcut name="profilerScopePointcut" expression="execution(* com.nokia.flexi.flexitaf.booter.Booter.main(..))"/&gt;
+        &lt;/concrete-aspect&gt;
+    &lt;/aspects&gt;
+    &lt;weaver options="-verbose"/&gt;
+&lt;/aspectj&gt;
+</pre>
+<p>Note that we set the scope of profiling to Booter entry-method.
+</p>
+<h4><span class="editsection">[<a href="../index1385.html?title=Maven_Guide&amp;action=edit&amp;section=29" title="Edit section: Tips &amp; tricks">edit</a>]</span> <span class="mw-headline" id="Tips_.26_tricks_2"> Tips &amp; tricks </span></h4>
+<p>To make life easier you should create your own profiles to your Maven settings.xml:
+</p>
+<pre> &lt;profiles&gt;
+   &lt;profile&gt;
+     &lt;id&gt;enable-profiling&lt;/id&gt;
+     &lt;properties&gt;
+       &lt;tfrm.test.aop.config&gt;/home/a4virtan/flexiaf-dev/aop-profiling.xml&lt;/tfrm.test.aop.config&gt;
+     &lt;/properties&gt;
+   &lt;/profile&gt;
+   &lt;profile&gt;
+     &lt;id&gt;enable-runtime-profiling&lt;/id&gt;
+     &lt;properties&gt;
+       &lt;tfrm.aop.config&gt;/home/a4virtan/flexiaf-dev/aop-runtime-profiling.xml&lt;/tfrm.aop.config&gt;
+     &lt;/properties&gt;
+   &lt;/profile&gt;
+   &lt;profile&gt;
+     &lt;id&gt;enable-tracing&lt;/id&gt;
+     &lt;properties&gt;
+       &lt;tfrm.test.aop.config&gt;/home/a4virtan/flexiaf-dev/aop-tracing.xml&lt;/tfrm.test.aop.config&gt;
+     &lt;/properties&gt;
+   &lt;/profile&gt;
+   &lt;profile&gt; 
+     &lt;id&gt;debug-logging&lt;/id&gt;
+     &lt;properties&gt;
+       &lt;java.util.logging.config.file&gt;/home/a4virtan/flexiaf-dev/logging.properties&lt;/java.util.logging.config.file&gt;
+     &lt;/properties&gt;
+   &lt;/profile&gt;
+ &lt;/profiles&gt;
+</pre>
+<p>And when you want to enable some aspect for your test executions you would just write:
+</p>
+<pre>mvn test -Ptest-loadtime-weaving,enable-profiling
+mvn test -Ptest-loadtime-weaving,enable-tracing,debug-logging
+</pre>
+<p>Note: you cannot enable both aspects at the same time using this method.
+</p><p>You can also pass extra args for JVM when starting it using property tfrm.test.aop.args. TODO: doesn't work currently.
+</p>
+<h3><span class="editsection">[<a href="../index60aa.html?title=Maven_Guide&amp;action=edit&amp;section=30" title="Edit section: Animal sniffer (JDK dependency verification)">edit</a>]</span> <span class="mw-headline" id="Animal_sniffer_.28JDK_dependency_verification.29"> Animal sniffer (JDK dependency verification) </span></h3>
+<p>Animal-sniffer (<a rel="nofollow" class="external free" href="https://animal-sniffer.dev.java.net/signature-checker.html">https://animal-sniffer.dev.java.net/signature-checker.html</a>) is a tool to verify that no dependencies from wrong JDK ends up into the project. For example we use JDK6 for compilation but we have documented that the projects are JRE5 compatible, which means that compilation will happily pass even we use JDK6 specific stuff, but the end-user is unable to use compiled JARs.
+</p><p>To enable animal-sniffer you only need to enable "sniff"-profile.
+</p>
+<pre>mvn install -Psniff
+</pre>
+<h2><span class="editsection">[<a href="../index91c1.html?title=Maven_Guide&amp;action=edit&amp;section=31" title="Edit section: Continuous Integration">edit</a>]</span> <span class="mw-headline" id="Continuous_Integration"> Continuous Integration </span></h2>
+<h3><span class="editsection">[<a href="../index51a9.html?title=Maven_Guide&amp;action=edit&amp;section=32" title="Edit section: Hudson">edit</a>]</span> <span class="mw-headline" id="Hudson"> Hudson </span></h3>
+<p>Hudson is running in flexiaf6 <a rel="nofollow" class="external autonumber" href="http://flexiaf6.fp.nsn-rdnet.net:10020/">[6]</a>. It is Installed to /opt/hudson-1.214 (TODO: directory name should be changed since version is not anymore same).
+</p><p>Artifacts will be deployed to tfrm.snapshot.repository (flexiaf6:/wwwroot/maven2-snapshot)
+Project reports are deployed to: /wwwroot/secure/maven-reports/.
+</p><p>Hudson is running as "maven" user. It uses "twauser" account for accessing version control.
+</p><p>Root-user account has same username/password as flexiaf6 root login has.
+</p><p>Data-directory can be found from &lt;INSTALL-DIR&gt;/data.
+</p><p>Hudson has init-scripts for startup/shutdown:
+</p>
+<ul><li>service hudson start
+</li><li>service hudson stop
+</li></ul>
+<p>To upgrade Hudson you need to:
+</p>
+<ul><li>Shutdown Hudson
+</li><li>Copy new WAR to &lt;INSTALL-DIR&gt;/lib. The WAR needs to be named "hudson.war" and you overwrite the old WAR.
+</li><li>Restart Hudsson
+</li></ul>
+<p>Note that the Hudson uses Maven embedder and it seems that it won't use settings.xml from /opt/apache-maven-&lt;VERSION&gt;/conf/settings.xml. Which means that if global settings.xml is changed at /twafs/utilities/maven/conf/settings.xml you need to copy-paste same settings to /localhome/maven/.m2/settings.xml.
+</p>
+<h3><span class="editsection">[<a href="../indexa76a.html?title=Maven_Guide&amp;action=edit&amp;section=33" title="Edit section: Continuum">edit</a>]</span> <span class="mw-headline" id="Continuum"> Continuum </span></h3>
+<p>NOTE: Continuum is not used anymore. Hudson has replaced it.
+</p><p>Continuum is running in flexiaf6 <a rel="nofollow" class="external autonumber" href="http://flexiaf6.ntc.nokia.com:8090/continuum/">[7]</a> using two different schedules:
+</p>
+<ul><li>Changed components are compiled and deployed hourly
+</li><li>Sites are deployed nightly
+</li></ul>
+<p>Artifacts will be deployed to tfrm.snapshot.repository (flexiaf6:/wwwroot/maven2-snapshot)
+Project reports are deployed to: /wwwroot/secure/maven-reports/.
+</p><p>Continuum installation has work-directory and build-directory 
+</p>
+<pre>/localhome/maven/continuum
+</pre>
+<p>When Continuum is updated, new installation should be configured to use that location.
+</p><p>Continuum is running as "maven" user. It uses "twauser" account for accessing version control.
+</p>
+<h2><span class="editsection">[<a href="../index9995.html?title=Maven_Guide&amp;action=edit&amp;section=34" title="Edit section: Repositories">edit</a>]</span> <span class="mw-headline" id="Repositories"> Repositories </span></h2>
+<p>Currently there are following internal repositories:
+</p>
+<ul><li>Central mirror (central, flexiaf6:/wwwroot/maven2). Don't deploy anything here by yourself which isn't available at ibiblio.
+</li><li>Release repository (tfrm.internal.repository, flexiaf6:/wwwroot/maven2-releases)
+</li><li>Snapshot repository (tfrm.snapshot.repository, flexiaf6:/wwwroot/maven2-snapshots)
+</li><li>3rd party (flexiaf6:/wwwroot/maven2-3rd-party). If you want to put some 3rd-party artifact to the repository which isn't available at ibiblio, then put it here.
+</li></ul>
+<h3><span class="editsection">[<a href="../index6a5c.html?title=Maven_Guide&amp;action=edit&amp;section=35" title="Edit section: Maintenance">edit</a>]</span> <span class="mw-headline" id="Maintenance"> Maintenance </span></h3>
+<p>Never update dependencies directly to own local repository. Instead download them to internal repository so all developers have same environment, including CI system.
+</p><p>Central mirror is stored to flexiaf6. Change to root user and "su -l maven". Repository is in /wwwroot/maven2/.
+</p>
+<h3><span class="editsection">[<a href="../index44cb.html?title=Maven_Guide&amp;action=edit&amp;section=36" title="Edit section: Download new artifact">edit</a>]</span> <span class="mw-headline" id="Download_new_artifact"> Download new artifact </span></h3>
+<p>To download new artifact to shared repository use maven@flexiaf6.fp.nsn-rdnet.net account and
+</p>
+<pre>download-artifact org.codehaus.plexus:plexus:jar:1.0.9
+download-artifact org.codehaus.plexus:plexus:jar:1.0.9 <a rel="nofollow" class="external free" href="http://snapshots.codehaus/maven2">http://snapshots.codehaus/maven2</a>
+</pre>
+<p>Note that also all dependencies of the artifact will be downloaded.
+</p>
+<h2><span class="editsection">[<a href="../index7c16.html?title=Maven_Guide&amp;action=edit&amp;section=37" title="Edit section: Links">edit</a>]</span> <span class="mw-headline" id="Links"> Links </span></h2>
+<ul><li> Maven web site <a rel="nofollow" class="external autonumber" href="http://maven.apache.org/">[8]</a>
+</li><li> Books
+<ul><li> Better builds with Maven <a rel="nofollow" class="external autonumber" href="http://sugar/docs/maven/Better builds with maven.pdf">[9]</a>
+</li><li> Maven user guide <a rel="nofollow" class="external autonumber" href="http://sugar/docs/maven/maven-user-guide.pdf">[10]</a>
+</li></ul>
+</li><li> Mojo project plugins <a rel="nofollow" class="external autonumber" href="http://mojo.codehaus.org/">[11]</a>
+</li></ul>
+
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 148/1000000
+Preprocessor generated node count: 156/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key wikidb:pcache:idhash:1747-0!*!*!!en!*!* and timestamp 20240823044244 -->
+</div><div class="printfooter">
+Retrieved from "<a href="../index2315.html?title=Maven_Guide&amp;oldid=8633">http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=Maven_Guide&amp;oldid=8633</a>"</div>
+		<div id='catlinks' class='catlinks catlinks-allhidden'></div>		<!-- end content -->
+				<div class="visualClear"></div>
+	</div>
+</div></div>
+<div id="column-one">
+	<h2>Navigation menu</h2>
+	<div id="p-cactions" class="portlet" role="navigation">
+		<h3>Views</h3>
+		<div class="pBody">
+			<ul>
+				<li id="ca-nstab-main" class="selected"><a href="Maven_Guide.html" primary="1" context="subject" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="../index284a.html?title=Talk:Maven_Guide&amp;action=edit&amp;redlink=1" primary="1" context="talk" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-edit"><a href="../indexe693.html?title=Maven_Guide&amp;action=edit" primary="1" title="You can edit this page. Please use the preview button before saving [e]" accesskey="e">Edit</a></li>
+				<li id="ca-history"><a href="../indexf322.html?title=Maven_Guide&amp;action=history" rel="archives" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal" role="navigation">
+		<h3>Personal tools</h3>
+		<div class="pBody">
+			<ul>
+				<li id="pt-anonuserpage"><a href="User_10.143.81.html" class="new" title="The user page for the IP address you are editing as [.]" accesskey=".">10.143.81.182</a></li>
+				<li id="pt-anontalk"><a href="User_talk_10.143.81.html" class="new" title="Discussion about edits from this IP address [n]" accesskey="n">Talk for this IP address</a></li>
+				<li id="pt-createaccount"><a href="../indexe949.html?title=Special:UserLogin&amp;returnto=Maven+Guide&amp;type=signup">Create account</a></li>
+				<li id="pt-anonlogin"><a href="../indexafc0.html?title=Special:UserLogin&amp;returnto=Maven+Guide" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo" role="banner">
+<a href="Main_Page.html" style="background-image: url(../skins/common/images/wiki.png);" title="Visit the main page"></a>
+	</div>
+	<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+			<ul>
+				<li id="n-mainpage-description"><a href="Main_Page.html" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+				<li id="n-portal"><a href="SugarWiki_Community_portal.html" title="About the project, what you can do, where to find things">Community portal</a></li>
+				<li id="n-currentevents"><a href="SugarWiki_Current_events.html" title="Find background information on current events">Current events</a></li>
+				<li id="n-recentchanges"><a href="Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+				<li id="n-randompage"><a href="POC_(Chengdu).html" title="Load a random page [x]" accesskey="x">Random page</a></li>
+				<li id="n-help"><a href="Help_Contents.html" title="The place to find out">Help</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet" role="search">
+		<h3><label for="searchInput">Search</label></h3>
+		<div id="searchBody" class="pBody">
+			<form action="http://sugar.fp.nsn-rdnet.net/wiki/index.php" id="searchform">
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input type="search" name="search" title="Search SugarWiki [f]" accesskey="f" id="searchInput" />
+				<input type="submit" name="go" value="Go" title="Go to a page with this exact name if exists" id="searchGoButton" class="searchButton" />&#160;
+				<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton" />
+			</form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb" role="navigation">
+		<h3>Toolbox</h3>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="Special_WhatLinksHere/Maven_Guide.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/Maven_Guide.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+				<li id="t-specialpages"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="../index84bd.html?title=Maven_Guide&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+				<li id="t-permalink"><a href="../index2315.html?title=Maven_Guide&amp;oldid=8633" title="Permanent link to this revision of the page">Permanent link</a></li>
+				<li id="t-info"><a href="../indexf90d.html?title=Maven_Guide&amp;action=info">Page information</a></li>
+			</ul>
+		</div>
+	</div>
+</div><!-- end of the left (by default at least) column -->
+<div class="visualClear"></div>
+<div id="footer" role="contentinfo">
+	<div id="f-poweredbyico">
+		<a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>
+	</div>
+	<ul id="f-list">
+		<li id="lastmod"> This page was last modified on 8 March 2010, at 13:50.</li>
+		<li id="viewcount">This page has been accessed 488 times.</li>
+		<li id="privacy"><a href="SugarWiki_Privacy_policy.html" title="SugarWiki:Privacy policy">Privacy policy</a></li>
+		<li id="about"><a href="SugarWiki_About.html" title="SugarWiki:About">About SugarWiki</a></li>
+		<li id="disclaimer"><a href="SugarWiki_General_disclaimer.html" title="SugarWiki:General disclaimer">Disclaimers</a></li>
+	</ul>
+</div>
+</div>
+<script>if(window.mw){
+mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi"], null, true);
+}</script>
+<script src="../loadc9d9.html?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=monobook&amp;*"></script>
+<!-- Served in 0.316 secs. --></body>
+<!-- Mirrored from sugar.fp.nsn-rdnet.net/wiki/index.php/Maven_Guide by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 23 Aug 2024 04:57:06 GMT -->
+</html>

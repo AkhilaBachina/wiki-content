@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+
+<!-- Mirrored from sugar.fp.nsn-rdnet.net/wiki/index.php?title=How_to_write_good_testcases&oldid=4361 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 23 Aug 2024 05:16:18 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>How to write good testcases - SugarWiki</title>
+<meta charset="UTF-8" />
+<meta name="generator" content="MediaWiki 1.21.1" />
+<meta name="robots" content="noindex,nofollow" />
+<link rel="alternate" type="application/x-wiki" title="Edit" href="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=How_to_write_good_testcases&amp;action=edit" />
+<link rel="edit" title="Edit" href="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=How_to_write_good_testcases&amp;action=edit" />
+<link rel="shortcut icon" href="http://sugar.fp.nsn-rdnet.net/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://sugar.fp.nsn-rdnet.net/wiki/opensearch_desc.php" title="SugarWiki (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="http://sugar.fp.nsn-rdnet.net/wiki/api.php?action=rsd" />
+<link rel="alternate" type="application/atom+xml" title="SugarWiki Atom feed" href="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="http://sugar.fp.nsn-rdnet.net/wiki/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cskins.monobook&amp;only=styles&amp;skin=monobook&amp;*" />
+<!--[if IE 6]><link rel="stylesheet" href="/wiki/skins/monobook/IE60Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="/wiki/skins/monobook/IE70Fixes.css?303" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="http://sugar.fp.nsn-rdnet.net/wiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook&amp;*" />
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: wikidb:resourceloader:filter:minify-css:7:7a3748d34e6456ae8d0f053363f745f7 */</style>
+
+<script src="http://sugar.fp.nsn-rdnet.net/wiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"How_to_write_good_testcases","wgTitle":"How to write good testcases","wgCurRevisionId":4361,"wgArticleId":1771,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"How_to_write_good_testcases","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"monobook","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,"watchlistdays":3,
+"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: wikidb:resourceloader:filter:minify-js:7:a02a7fa766593347c4dbb130a7c3803e */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-How_to_write_good_testcases skin-monobook action-view">
+<div id="globalWrapper">
+<div id="column-content"><div id="content" class="mw-body-primary" role="main">
+	<a id="top"></a>
+	
+	<h1 id="firstHeading" class="firstHeading" lang="en"><span dir="auto">How to write good testcases</span></h1>
+	<div id="bodyContent" class="mw-body">
+		<div id="siteSub">From SugarWiki</div>
+		<div id="contentSub"><div id="mw-revision-info">Revision as of 13:13, 13 February 2008 by <a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=User:Oskoivis&amp;action=edit&amp;redlink=1" class="new mw-userlink" title="User:Oskoivis (page does not exist)">Oskoivis</a>  <span class="mw-usertoollinks">(<a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=User_talk:Oskoivis&amp;action=edit&amp;redlink=1" class="new" title="User talk:Oskoivis (page does not exist)">Talk</a> | <a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php/Special:Contributions/Oskoivis" title="Special:Contributions/Oskoivis">contribs</a>)</span></div><br />
+				<div id="mw-revision-nav">(<a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=How_to_write_good_testcases&amp;diff=prev&amp;oldid=4361" title="How to write good testcases">diff</a>) <a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=How_to_write_good_testcases&amp;direction=prev&amp;oldid=4361" title="How to write good testcases">← Older revision</a> | Latest revision (diff) | Newer revision → (diff)</div></div>
+		<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+		<!-- start content -->
+<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Preface"><span class="tocnumber">1</span> <span class="toctext">Preface</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Development_of_testcases"><span class="tocnumber">2</span> <span class="toctext">Development of testcases</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#How_to_start_a_new_testcase"><span class="tocnumber">2.1</span> <span class="toctext">How to start a new testcase</span></a>
+<ul>
+<li class="toclevel-3 tocsection-4"><a href="#How_to_create_a_testcase_which_is_similar_to_another_testcase"><span class="tocnumber">2.1.1</span> <span class="toctext">How to create a testcase which is similar to another testcase</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-5"><a href="#Process_of_developing.2Fmaintaining_a_testcase"><span class="tocnumber">2.2</span> <span class="toctext">Process of developing/maintaining a testcase</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Test_case_coding_guidelines"><span class="tocnumber">2.3</span> <span class="toctext">Test case coding guidelines</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Common_functions"><span class="tocnumber">3</span> <span class="toctext">Common functions</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="#How_to_use_common_functions"><span class="tocnumber">3.1</span> <span class="toctext">How to use common functions</span></a>
+<ul>
+<li class="toclevel-3 tocsection-9"><a href="#Examples_of_copy_tasks_in_the_testcase.27s_metadata_file"><span class="tocnumber">3.1.1</span> <span class="toctext">Examples of copy tasks in the testcase's metadata file</span></a></li>
+<li class="toclevel-3 tocsection-10"><a href="#Examples_of_copy_tasks_in_the_domain.27s_metadata_file"><span class="tocnumber">3.1.2</span> <span class="toctext">Examples of copy tasks in the domain's metadata file</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-11"><a href="#Coding_guidelines_for_common_functions"><span class="tocnumber">3.2</span> <span class="toctext">Coding guidelines for common functions</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Which_common_functions_are_available"><span class="tocnumber">3.3</span> <span class="toctext">Which common functions are available</span></a>
+<ul>
+<li class="toclevel-3 tocsection-13"><a href="#Available_domain.2Fsubdomain-specific_common_functions:"><span class="tocnumber">3.3.1</span> <span class="toctext">Available domain/subdomain-specific common functions:</span></a></li>
+<li class="toclevel-3 tocsection-14"><a href="#Available_general_common_functions:"><span class="tocnumber">3.3.2</span> <span class="toctext">Available general common functions:</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-15"><a href="#Test_applications"><span class="tocnumber">4</span> <span class="toctext">Test applications</span></a>
+<ul>
+<li class="toclevel-2 tocsection-16"><a href="#Test_applications_provided_with_the_.28testing.29_build"><span class="tocnumber">4.1</span> <span class="toctext">Test applications provided with the (testing) build</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#How_to_use_specific_self-provided_test_applications"><span class="tocnumber">4.2</span> <span class="toctext">How to use specific self-provided test applications</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-18"><a href="#Other"><span class="tocnumber">5</span> <span class="toctext">Other</span></a>
+<ul>
+<li class="toclevel-2 tocsection-19"><a href="#How_to_do_LDAP_changes"><span class="tocnumber">5.1</span> <span class="toctext">How to do LDAP changes</span></a>
+<ul>
+<li class="toclevel-3 tocsection-20"><a href="#Adding_LDAP_entries"><span class="tocnumber">5.1.1</span> <span class="toctext">Adding LDAP entries</span></a></li>
+<li class="toclevel-3 tocsection-21"><a href="#Modifying_LDAP_entries"><span class="tocnumber">5.1.2</span> <span class="toctext">Modifying LDAP entries</span></a></li>
+<li class="toclevel-3 tocsection-22"><a href="#Deleting_LDAP_entries"><span class="tocnumber">5.1.3</span> <span class="toctext">Deleting LDAP entries</span></a></li>
+<li class="toclevel-3 tocsection-23"><a href="#Importing_LDAP_entries"><span class="tocnumber">5.1.4</span> <span class="toctext">Importing LDAP entries</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h2><span class="editsection">[<a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=How_to_write_good_testcases&amp;action=edit&amp;section=1" title="Edit section: Preface">edit</a>]</span> <span class="mw-headline" id="Preface">Preface</span></h2>
+<p>This Wikipage shall provide information about how we (TFRM) think that FT testcases should be designed and implemented using FlexiTAF. The following  guidelines are based on the <a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php/General_Principles" title="General Principles">General Principles</a> for test automation and the <a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php/Implementation_Guidelines" title="Implementation Guidelines">Implementation Guidelines</a> but shall provide more examples.<br />
+</p>
+<h2><span class="editsection">[<a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=How_to_write_good_testcases&amp;action=edit&amp;section=2" title="Edit section: Development of testcases">edit</a>]</span> <span class="mw-headline" id="Development_of_testcases">Development of testcases</span></h2>
+<h3><span class="editsection">[<a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=How_to_write_good_testcases&amp;action=edit&amp;section=3" title="Edit section: How to start a new testcase">edit</a>]</span> <span class="mw-headline" id="How_to_start_a_new_testcase">How to start a new testcase</span></h3>
+<p>A new testcase should normally be started from scratch. Use afcli to create the testcase directory, an empty testcase metadata file, and empty tc and tc_analyze files. <br />
+Example:
+</p>
+<pre>afcli –-release 1 –-exec-engine tcexec create testcase ExampleDomain/ExampleSubdomain example_001
+</pre>
+<p>This command creates a new testcase <i>example_001</i> in release <i>Release_1</i>, domain <i>ExampleDomain</i> subdomain <i>ExampleSubdomain</i>.
+</p>
+<h4><span class="editsection">[<a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=How_to_write_good_testcases&amp;action=edit&amp;section=4" title="Edit section: How to create a testcase which is similar to another testcase">edit</a>]</span> <span class="mw-headline" id="How_to_create_a_testcase_which_is_similar_to_another_testcase">How to create a testcase which is similar to another testcase</span></h4>
+<p>It should always be avoided to just copy an existing testcase and then start modifying. If a testcase (e.g., <i>example_002</i>) has very similar behavior than another testcase (e.g., <i>example_001</i>), the functions used in <i>example_001</i> should be analyzed if they can (and will) be used by several testcases in the domain/subdomain. If yes, these functions should be copied to the common directory of the domain/subdomain, respectively. All testcases which then want to use these functions, should add appropriate copy commands in their testcase metadata file ("testcase.xml").<br />
+<b>Never</b> use symbolic links from the testcase's tcexec directory to the common function.
+</p>
+<h3><span class="editsection">[<a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=How_to_write_good_testcases&amp;action=edit&amp;section=5" title="Edit section: Process of developing/maintaining a testcase">edit</a>]</span> <span class="mw-headline" id="Process_of_developing.2Fmaintaining_a_testcase">Process of developing/maintaining a testcase</span></h3>
+<ol><li> When developing a new testcase, create the (empty) testcase as described here: <a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php/How_to_write_good_testcases#How_to_start_a_new_testcase" title="How to write good testcases">How to write good testcases#How to start a new testcase</a>.
+</li><li> For existing testcase, do "svn update" to really edit the current version of the testcase. (Note: Do "svn update" always on highest level to make sure that your working directory contains also the latest version of all common functions and domain metadata files.)
+</li><li> Then implement/change the testcase logic and test it on appropriate target using the <i>--local</i> option of afcli.
+</li><li> Once the testcase is finished, add the files to the repository (for new testcases) and commit it. Check with "svn status" that all files which belong to the testcase are in the repository. (Note: Although it is preferable that the testcases is passing before it is committed, the implemented but failing testcase can also be committed if the tested feature is not working -- as proven by the testcase.)
+</li><li> Finally, do (at least) one execution without the <i>--local</i> option to (a) have an official test case execution result for reference and (b) to make sure that really everything has been committed.
+</li></ol>
+<p><br />
+</p>
+<h3><span class="editsection">[<a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=How_to_write_good_testcases&amp;action=edit&amp;section=6" title="Edit section: Test case coding guidelines">edit</a>]</span> <span class="mw-headline" id="Test_case_coding_guidelines">Test case coding guidelines</span></h3>
+<ul><li> no hard-coded IPs, usernames, passwords in the tc file or other functions
+</li><li> define testcase-wide variables in the testcase's metadata file
+</li><li> extensively use metadata tasks wherever possible/applicable (for exact syntax see <a rel="nofollow" class="external text" href="http://pi.nokia.com/urn.htm?id=09006c37810100cb&amp;docb=espoo11&amp;version=current&amp;document_id=13-503319">FlexiTAF User Guide</a>)
+</li><li> use TCExec exit codes correctly (see <a rel="nofollow" class="external text" href="http://pi.nokia.com/urn.htm?id=09006c3780a315c9&amp;DMW_DOCBASE=espoo11&amp;auth=T&amp;version=current&amp;document_id=13-404975">TCExec Exit Code Guide</a>)
+</li></ul>
+<h2><span class="editsection">[<a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=How_to_write_good_testcases&amp;action=edit&amp;section=7" title="Edit section: Common functions">edit</a>]</span> <span class="mw-headline" id="Common_functions">Common functions</span></h2>
+<h3><span class="editsection">[<a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=How_to_write_good_testcases&amp;action=edit&amp;section=8" title="Edit section: How to use common functions">edit</a>]</span> <span class="mw-headline" id="How_to_use_common_functions">How to use common functions</span></h3>
+<p>Common functions/scripts should be put to the domain's or subdomain's common directory (or any subdirectory there), respectively. If a testcase wants to use any of these functions/scripts, appropriate copy commands should be added to the testcase's metadata file ("testcase.xml"). If all testcases of a domain/subdomain use the same set of common functions, the copy commands can also be given in the respective domain's metadata file ("domain.xml").
+</p><p><b>Never</b> use symbolic links form the testcase's directory pointing to file containing the common function/script. Testcases using symbolic links should be changed such that they are <i>replacing</i> the symbolic links by copy commands.<br />
+The rationale behind this
+</p>
+<ol><li> Files (and also symbolic links) in the Subversion repository are checked out in random order. If there are executable symlinks, checkout fails if the target of the symlink is not yet checked out when the Subversion tries to set the executable flag to the copy of that file. (This is a feature of Subversion and propably won't be fixed anytime soon. Only solution is just to avoid symlinks.)
+</li><li> Symbolic links in the testcase directory are difficult to distinguish from test-specific files if one debugs all the files in the testcase's tcexec directory (without always carefully checking if it is test-case specific or just a symbolic link). Then, common files are accidentally changed in a way that other testcases fail.
+</li></ol>
+<h4><span class="editsection">[<a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=How_to_write_good_testcases&amp;action=edit&amp;section=9" title="Edit section: Examples of copy tasks in the testcase's metadata file">edit</a>]</span> <span class="mw-headline" id="Examples_of_copy_tasks_in_the_testcase.27s_metadata_file">Examples of copy tasks in the testcase's metadata file</span></h4>
+<p>To copy all files with ending <i>.sh</i> which are in the subdomain's common directory (subdirectory script) to the testcase's tcexec directory:
+</p>
+<pre>&lt;testcase model-version=&quot;1.0.0&quot; description=&quot;&quot;&gt;
+     &lt;tasks&gt;
+         &lt;pre&gt;
+             &lt;copy&gt;
+                 &lt;fileset path=&quot;../common/script&quot;&gt;
+                     &lt;glob pattern=&quot;*.sh&quot;/&gt;
+                 &lt;/fileset&gt;
+             &lt;/copy&gt;
+         &lt;/pre&gt;
+    &lt;/tasks&gt;
+ &lt;/testcase&gt;
+</pre>
+<h4><span class="editsection">[<a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=How_to_write_good_testcases&amp;action=edit&amp;section=10" title="Edit section: Examples of copy tasks in the domain's metadata file">edit</a>]</span> <span class="mw-headline" id="Examples_of_copy_tasks_in_the_domain.27s_metadata_file">Examples of copy tasks in the domain's metadata file</span></h4>
+<p>To copy two specific files from the domain's common directory (subdirectory script) to the testcase's directory <i>example_001/tcexec/script/</i>
+</p>
+<pre>&lt;domain model-version=&quot;1.0.0&quot; description=&quot;&quot;&gt;
+     &lt;tasks&gt;
+         &lt;pre&gt;
+             &lt;copy dest=&quot;script&quot;&gt;
+                 &lt;file path=&quot;common/script/CommonFunctions.sh&quot;/&gt;
+                 &lt;file path=&quot;common/script/OtherFunctions.sh&quot;/&gt;
+             &lt;/copy&gt;
+         &lt;/pre&gt;
+     &lt;/tasks&gt;
+ &lt;/domain&gt;
+</pre>
+<h3><span class="editsection">[<a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=How_to_write_good_testcases&amp;action=edit&amp;section=11" title="Edit section: Coding guidelines for common functions">edit</a>]</span> <span class="mw-headline" id="Coding_guidelines_for_common_functions">Coding guidelines for common functions</span></h3>
+<p>Common functions are supposed to be used by several testcases. Thus, it is mandatory to provide appropriate documentation with each function. At least provide the following:
+</p>
+<ul><li> brief description of the common function's functionality
+</li><li> list of input parameters and their possible values
+</li><li> list of output parameters
+</li><li> possible return codes and their meaning
+</li><li> other common functions used by this function (the function's dependencies)
+</li><li> comments/hints/tips
+</li><li> author and date of the implementation
+</li></ul>
+<h3><span class="editsection">[<a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=How_to_write_good_testcases&amp;action=edit&amp;section=12" title="Edit section: Which common functions are available">edit</a>]</span> <span class="mw-headline" id="Which_common_functions_are_available">Which common functions are available</span></h3>
+<p>In addition to common functions of specific domains or subdomains, it is also possible to have common functions for all domains.
+</p><p>From time to time, the existing domain/subdomain-specific common functions should be assessed if they are of global use. Then, they should be moved to the general common functions. (Note: This requires to update the copy tasks in the metadata files!)
+</p>
+<h4><span class="editsection">[<a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=How_to_write_good_testcases&amp;action=edit&amp;section=13" title="Edit section: Available domain/subdomain-specific common functions:">edit</a>]</span> <span class="mw-headline" id="Available_domain.2Fsubdomain-specific_common_functions:">Available domain/subdomain-specific common functions: </span></h4>
+<ul><li> See the respective directories in the SVN repository
+</li></ul>
+<h4><span class="editsection">[<a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=How_to_write_good_testcases&amp;action=edit&amp;section=14" title="Edit section: Available general common functions:">edit</a>]</span> <span class="mw-headline" id="Available_general_common_functions:">Available general common functions:</span></h4>
+<ul><li> TODO
+</li></ul>
+<h2><span class="editsection">[<a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=How_to_write_good_testcases&amp;action=edit&amp;section=15" title="Edit section: Test applications">edit</a>]</span> <span class="mw-headline" id="Test_applications">Test applications</span></h2>
+<h3><span class="editsection">[<a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=How_to_write_good_testcases&amp;action=edit&amp;section=16" title="Edit section: Test applications provided with the (testing) build">edit</a>]</span> <span class="mw-headline" id="Test_applications_provided_with_the_.28testing.29_build">Test applications provided with the (testing) build</span></h3>
+<h3><span class="editsection">[<a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=How_to_write_good_testcases&amp;action=edit&amp;section=17" title="Edit section: How to use specific self-provided test applications">edit</a>]</span> <span class="mw-headline" id="How_to_use_specific_self-provided_test_applications">How to use specific self-provided test applications</span></h3>
+<p>Self-provided test applications should be stored in a subdirectory of the testcase (if the application is only used there) or the domain/subdomain (if the application is used in several testcases). The test application should comprise the header files, the source code as well as makefiles that can be used with the respective build environment (e.g., LinSEE).
+All testcases which want to use the test application should add a build task in their metadata file ("testcase.xml"). If all/many testcases of a domain use the test application, the build task can also be in the domain metadata file ("domain.xml").
+</p><p>To build a C++ test application called "My test application" on LinSEE with clearmake, the following build task has to be added:
+</p>
+<pre>&lt;testcase model-version=&quot;1.0.0&quot; description=&quot;&quot;&gt;
+     &lt;tasks&gt;
+         &lt;pre&gt;
+             &lt;build name=&quot;My test application&quot; provider=&quot;linsee&quot;  make-prog=&quot;clearmake&quot; make-args=&quot;-C gnu&quot; makefile-path=&quot;common/TestApp/build/makefile&quot;&gt;
+                 &lt;input&gt;
+                     &lt;fileset path=&quot;common/MyTestApp/src&quot;&gt;
+                         &lt;glob pattern=&quot;*.cpp&quot;/&gt;
+                         &lt;glob pattern=&quot;*.h&quot;/&gt;
+                     &lt;/fileset&gt;
+                     &lt;file path=&quot;common/MyTestApp/build/makefile&quot;/&gt;
+                 &lt;/input&gt;
+                 &lt;output&gt;
+                     &lt;file path=&quot;common/TestApp/src/test_app&quot;/&gt;
+                 &lt;/output&gt;
+             &lt;/build&gt;
+         &lt;/pre&gt;
+     &lt;/tasks&gt;
+ &lt;/testcase&gt;
+</pre>
+<h2><span class="editsection">[<a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=How_to_write_good_testcases&amp;action=edit&amp;section=18" title="Edit section: Other">edit</a>]</span> <span class="mw-headline" id="Other">Other</span></h2>
+<h3><span class="editsection">[<a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=How_to_write_good_testcases&amp;action=edit&amp;section=19" title="Edit section: How to do LDAP changes">edit</a>]</span> <span class="mw-headline" id="How_to_do_LDAP_changes">How to do LDAP changes</span></h3>
+<p>If possible, LDAP changes should be done using FlexiTAF LDAP tasks which are defined in the metadata file (testcase or domain metadata file). These LDAP tasks can be performed <i>before</i> the tc file of the testcase is executed (pre phase) and also <i>after</i> its execution (post phase). 
+<br />
+Since a testcase should leave the target cluster in the same condition as it has been before the testcase execution, remember to revert your changes:
+</p>
+<ul><li> Adding entries in the pre phase should be accompanied by removing that entry again in the post phase.
+</li><li> Changing entries in the pre phase should be accompanied by changing that value back to its old value (if known).
+</li><li> Entries removed in the pre phase should be added again in the post phase (if these entries are usually there in LDAP).
+</li></ul>
+<h4><span class="editsection">[<a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=How_to_write_good_testcases&amp;action=edit&amp;section=20" title="Edit section: Adding LDAP entries">edit</a>]</span> <span class="mw-headline" id="Adding_LDAP_entries">Adding LDAP entries</span></h4>
+<p>New LDAP entries can be added using the FlexiTAF LDAP task "ldap add" in the metadata file (testcase or domain metadata file).
+An example is provided in the FlexiTAF User Guide.
+</p>
+<h4><span class="editsection">[<a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=How_to_write_good_testcases&amp;action=edit&amp;section=21" title="Edit section: Modifying LDAP entries">edit</a>]</span> <span class="mw-headline" id="Modifying_LDAP_entries">Modifying LDAP entries</span></h4>
+<p>Existing LDAP entries can be modified using FlexiTAF LDAP task "ldap modify" in the metadata file (testcase or domain metadata file). <br />
+The following example enables an (imaginary) ping services that is started by setting the respective entrie's attribute "enablePingServer" to "true". The LDAP entry is modified <i>before</i> the testcase is executed (pre phase) and also  <i>after</i> its execution (post phase) to set the value back to "false". 
+<br />
+Note that this example does not restore the old value which is not good practice (and can cause problems in other testcases). However, this problem can currently not be solved in a better way using ldap tasks.
+</p>
+<pre>&lt;testcase model-version=”1.0.0” description=”Test Local Ping Service”&gt;
+     &lt;tasks&gt;
+         &lt;pre&gt;
+            &lt;ldap&gt;
+                &lt;modify dn=&quot;PingServer=testPingServer,
+                        FragmentId=PingServer, targetId=TargetRoot&quot;&gt;
+                    &lt;attribute name=&quot;enablePingServer&quot; value=&quot;true&quot;/&gt;
+                &lt;/modify&gt;
+            &lt;/ldap&gt;
+         &lt;pre&gt;
+         &lt;execute&gt;
+            &lt;tcexec timeout=”10”/&gt;
+         &lt;/execute&gt;
+         &lt;post&gt;
+            &lt;ldap&gt;
+                &lt;modify dn=&quot;PingServer=testPingServer,
+                        FragmentId=PingServer, targetId=TargetRoot&quot;&gt;
+                    &lt;attribute name=&quot;enablePingServer&quot; value=&quot;false&quot;/&gt;
+                &lt;/modify&gt;
+            &lt;/ldap&gt;
+         &lt;/post&gt;
+     &lt;tasks&gt;
+ &lt;/testcase&gt;
+</pre>
+<h4><span class="editsection">[<a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=How_to_write_good_testcases&amp;action=edit&amp;section=22" title="Edit section: Deleting LDAP entries">edit</a>]</span> <span class="mw-headline" id="Deleting_LDAP_entries">Deleting LDAP entries</span></h4>
+<p>Existing LDAP entries and LDAP entry attributes can be removed using the FlexiTAF LDAP task "ldap remove" in the metadata file (testcase or domain metadata file). Removing is non-recursive so only leaf-nodes can be removed.
+<br />
+An example is provided in the FlexiTAF User Guide.
+</p><p><br />
+</p>
+<h4><span class="editsection">[<a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=How_to_write_good_testcases&amp;action=edit&amp;section=23" title="Edit section: Importing LDAP entries">edit</a>]</span> <span class="mw-headline" id="Importing_LDAP_entries">Importing LDAP entries</span></h4>
+<p>Modifications can also be done directly using standard LDIF and the LDIF import task in the metadata file (testcase or domain metadata file).
+</p>
+<pre>&lt;ldap&gt;
+   &lt;ldif-import&gt;
+     &lt;file path=”my_changes.ldif”/&gt;
+   &lt;/ldif-import&gt;
+ &lt;/ldap&gt;
+</pre>
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 129/1000000
+Preprocessor generated node count: 196/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key wikidb:pcache:idhash:1771-0!*!0!!en!*!* and timestamp 20240823044158 -->
+</div><div class="printfooter">
+Retrieved from "<a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=How_to_write_good_testcases&amp;oldid=4361">http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=How_to_write_good_testcases&amp;oldid=4361</a>"</div>
+		<div id='catlinks' class='catlinks catlinks-allhidden'></div>		<!-- end content -->
+				<div class="visualClear"></div>
+	</div>
+</div></div>
+<div id="column-one">
+	<h2>Navigation menu</h2>
+	<div id="p-cactions" class="portlet" role="navigation">
+		<h3>Views</h3>
+		<div class="pBody">
+			<ul>
+				<li id="ca-nstab-main" class="selected"><a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php/How_to_write_good_testcases" primary="1" context="subject" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=Talk:How_to_write_good_testcases&amp;action=edit&amp;redlink=1" primary="1" context="talk" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-edit"><a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=How_to_write_good_testcases&amp;action=edit" primary="1" title="You can edit this page. Please use the preview button before saving [e]" accesskey="e">Edit</a></li>
+				<li id="ca-history"><a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=How_to_write_good_testcases&amp;action=history" rel="archives" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal" role="navigation">
+		<h3>Personal tools</h3>
+		<div class="pBody">
+			<ul>
+				<li id="pt-anonuserpage"><a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php/User:10.143.81.182" class="new" title="The user page for the IP address you are editing as [.]" accesskey=".">10.143.81.182</a></li>
+				<li id="pt-anontalk"><a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php/User_talk:10.143.81.182" class="new" title="Discussion about edits from this IP address [n]" accesskey="n">Talk for this IP address</a></li>
+				<li id="pt-createaccount"><a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=Special:UserLogin&amp;returnto=How+to+write+good+testcases&amp;returntoquery=oldid%3D4361&amp;type=signup">Create account</a></li>
+				<li id="pt-anonlogin"><a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=Special:UserLogin&amp;returnto=How+to+write+good+testcases&amp;returntoquery=oldid%3D4361" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo" role="banner">
+<a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php/Main_Page" style="background-image: url(http://sugar.fp.nsn-rdnet.net/wiki/skins/common/images/wiki.png);" title="Visit the main page"></a>
+	</div>
+	<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+			<ul>
+				<li id="n-mainpage-description"><a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+				<li id="n-portal"><a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php/SugarWiki:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li>
+				<li id="n-currentevents"><a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php/SugarWiki:Current_events" title="Find background information on current events">Current events</a></li>
+				<li id="n-recentchanges"><a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+				<li id="n-randompage"><a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+				<li id="n-help"><a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php/Help:Contents" title="The place to find out">Help</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet" role="search">
+		<h3><label for="searchInput">Search</label></h3>
+		<div id="searchBody" class="pBody">
+			<form action="http://sugar.fp.nsn-rdnet.net/wiki/index.php" id="searchform">
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input type="search" name="search" title="Search SugarWiki [f]" accesskey="f" id="searchInput" />
+				<input type="submit" name="go" value="Go" title="Go to a page with this exact name if exists" id="searchGoButton" class="searchButton" />&#160;
+				<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton" />
+			</form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb" role="navigation">
+		<h3>Toolbox</h3>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php/Special:WhatLinksHere/How_to_write_good_testcases" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php/Special:RecentChangesLinked/How_to_write_good_testcases" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+				<li id="t-specialpages"><a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=How_to_write_good_testcases&amp;oldid=4361&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+				<li id="t-permalink"><a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=How_to_write_good_testcases&amp;oldid=4361" title="Permanent link to this revision of the page">Permanent link</a></li>
+				<li id="t-info"><a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=How_to_write_good_testcases&amp;action=info">Page information</a></li>
+			</ul>
+		</div>
+	</div>
+</div><!-- end of the left (by default at least) column -->
+<div class="visualClear"></div>
+<div id="footer" role="contentinfo">
+	<div id="f-poweredbyico">
+		<a href="http://www.mediawiki.org/"><img src="http://sugar.fp.nsn-rdnet.net/wiki/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>
+	</div>
+	<ul id="f-list">
+		<li id="lastmod"> This page was last modified on 13 February 2008, at 13:13.</li>
+		<li id="viewcount">This page has been accessed 647 times.</li>
+		<li id="privacy"><a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php/SugarWiki:Privacy_policy" title="SugarWiki:Privacy policy">Privacy policy</a></li>
+		<li id="about"><a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php/SugarWiki:About" title="SugarWiki:About">About SugarWiki</a></li>
+		<li id="disclaimer"><a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php/SugarWiki:General_disclaimer" title="SugarWiki:General disclaimer">Disclaimers</a></li>
+	</ul>
+</div>
+</div>
+<script>if(window.mw){
+mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi"], null, true);
+}</script>
+<script src="http://sugar.fp.nsn-rdnet.net/wiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=monobook&amp;*"></script>
+<!-- Served in 0.241 secs. --></body>
+<!-- Mirrored from sugar.fp.nsn-rdnet.net/wiki/index.php?title=How_to_write_good_testcases&oldid=4361 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 23 Aug 2024 05:16:18 GMT -->
+</html>

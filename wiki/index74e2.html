@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+
+<!-- Mirrored from sugar.fp.nsn-rdnet.net/wiki/index.php?title=TFRM_Software_Development_Guide&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 23 Aug 2024 05:17:26 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>Editing TFRM Software Development Guide - SugarWiki</title>
+<meta charset="UTF-8" />
+<meta name="generator" content="MediaWiki 1.21.1" />
+<meta name="robots" content="noindex,nofollow" />
+<link rel="alternate" type="application/x-wiki" title="Edit" href="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=TFRM_Software_Development_Guide&amp;action=edit" />
+<link rel="edit" title="Edit" href="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=TFRM_Software_Development_Guide&amp;action=edit" />
+<link rel="shortcut icon" href="http://sugar.fp.nsn-rdnet.net/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://sugar.fp.nsn-rdnet.net/wiki/opensearch_desc.php" title="SugarWiki (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="http://sugar.fp.nsn-rdnet.net/wiki/api.php?action=rsd" />
+<link rel="alternate" type="application/atom+xml" title="SugarWiki Atom feed" href="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="http://sugar.fp.nsn-rdnet.net/wiki/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cskins.monobook&amp;only=styles&amp;skin=monobook&amp;*" />
+<!--[if IE 8]><link rel="stylesheet" href="/wiki/skins/common/IE80Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 6]><link rel="stylesheet" href="/wiki/skins/monobook/IE60Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="/wiki/skins/monobook/IE70Fixes.css?303" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="http://sugar.fp.nsn-rdnet.net/wiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook&amp;*" />
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: wikidb:resourceloader:filter:minify-css:7:7a3748d34e6456ae8d0f053363f745f7 */</style>
+
+<script src="http://sugar.fp.nsn-rdnet.net/wiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"TFRM_Software_Development_Guide","wgTitle":"TFRM Software Development Guide","wgCurRevisionId":7063,"wgArticleId":1758,"wgIsArticle":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"TFRM_Software_Development_Guide","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"monobook","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,"watchlistdays":3,
+"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: wikidb:resourceloader:filter:minify-js:7:a02a7fa766593347c4dbb130a7c3803e */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.edit","mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-TFRM_Software_Development_Guide skin-monobook action-edit">
+<div id="globalWrapper">
+<div id="column-content"><div id="content" class="mw-body-primary" role="main">
+	<a id="top"></a>
+	
+	<h1 id="firstHeading" class="firstHeading" lang="en"><span dir="auto">Editing TFRM Software Development Guide</span></h1>
+	<div id="bodyContent" class="mw-body">
+		<div id="siteSub">From SugarWiki</div>
+		<div id="contentSub"></div>
+		<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+		<!-- start content -->
+<div id="mw-content-text"><div id="mw-anon-edit-warning">
+<p><b>Warning:</b> You are not logged in.
+</p>
+Your IP address will be recorded in this page's edit history.</div>
+<div id="wikiPreview" class="ontop" style="display: none;"></div><form id="editform" name="editform" method="post" action="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=TFRM_Software_Development_Guide&amp;action=submit" enctype="multipart/form-data"><input type='hidden' value="" name="wpSection" />
+<input type='hidden' value="20240823045420" name="wpStarttime" />
+<input type='hidden' value="20080917093426" name="wpEdittime" />
+<input type='hidden' value="" name="wpScrolltop" id="wpScrolltop" />
+<input type="hidden" value="d41d8cd98f00b204e9800998ecf8427e" name="wpAutoSummary" /><input type="hidden" value="0" name="oldid" /><input type="hidden" value="text/x-wiki" name="format" /><input type="hidden" value="wikitext" name="model" /><div id="toolbar"></div><textarea tabindex="1" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" lang="en" dir="ltr" name="wpTextbox1">= Introduction =
+
+Test applications are real production software. They must work in reliable, predictable and well documented manner. Unfortunately, test applications are sometimes initially developed thinking only one testing phase, like module testing, and one user, like the author him/herself. Usually the same applications are needed in other test phases, and even by other products later on. They are also used and updated for maintetenance testing long after original "final" release. 
+
+Re-writing and improving applications by different people consumes huge amout of resources. In the long term it saves effort for everybody to create good quality in the first place. But don't be afraid to release the code when it is "good enough" for current needs.
+ 
+= Basics =
+The requirement level for the applications depends on its intended use. If there is no reason the decide otherwise the test applications should be developed stability testing in mind. 
+
+== Quality requirements ==
+* Make code readable by others. Also the test applications must be easy to debug and fix if and when problems arise. Write comments. Don't use cryptic variable and function names.
+* Remember the quality. The better the design the easier it is to correct problems and add features later on.
+* Don't be too clever. Write code that can easily be undestood and modified by others. Document complex and novel solutions clearly.
+* Think of the users. The applications must be intuitive to use. They must detect errors and provide help. Segfault is not a proper response for a typo in the configuration file. Application output must be such that user can verify that the feature under test is working properly, or if the feature is broken the test application must provide helpful diagnostic messages.
+
+== Stability testing requirements ==
+
+* Applications must survive running for two weeks without interruption. In the meantime the library or the feature that the application is testing can be stopped and started many times or it may crash. Test application cannot get confused by this. 
+* The application must provide meaningful result logs with reasonable amout of data during the long execution. It's not allowed to print results only at the end.
+* The test application footprint must be as small as possbile; Leaking memory or waiting for random event in a busy loop is not acceptable. Nobody wants to see a test case to fail after 10 days because the test application causes the system to crash.
+
+= General Rules =
+== Files, Building, Distribution==
+*Everything has to be stored in version control
+*Application should be distributable as a single package
+*All releases have some unique version number which is tagged in used version control. The code of tagged release shall never change.
+*Application should be buildable with single command
+**You should use some make-system like Ant [http://ant.apache.org/], Make, Clearmake [http://halti.ntc.nokia.com/FlexiServer_SCM/Flexi_platform/FS_SCM_documents.htm], Automake, Maven [http://maven.apache.org/] etc. Ant is very easy to use and can be also used for c++ applications.
+*Application should be startable with single command
+*Application should be packaged/released with single command
+**You should provide some simple start script or binary which can be started.
+*Use issuetracker for documenting defects and improvement ideas during development and maintenance [http://sugar/tfrm/trac]
+
+== Design ==
+*Prefer UML diagrams when writing designs. Visio and Rational Rose are good tools for creating UML-diagrams.
+
+== Implementation ==
+*Utilize well known libraries
+**C++:
+***Use STL for everything you can
+***If something is missing from STL, check Boost [http://www.boost.org]
+***Use TCLAP for command line argument parsing [http://sugar/tfrm/docs/tclap/index.html API docs]
+***Use LibTFRM for some specific things [http://sugar/tfrm/docs/libtfrm/index.html API docs]. It provides mostly helper classes for common problems encountered during test application development (how to handle input/output, reporting, configurability, message sending loop etc.).
+***Use Xerces for XML handling (LibTFRM has helper classes for Xerces) [http://xml.apache.org/xerces-c/ XercesC page]
+***Use threading library for threads (pthread, zthread [http://zthread.sourceforge.net/ ZThread page] etc)
+***Order for selecting implementation to specific problem: STL -> Boost -> Other 3rd party libraries -> LibTFRM -> implement it by yourself.
+**Java:
+***If you think something is missing from Java Standard Library check Jakarta Commons libaries [http://jakarta.apache.org/commons/ Jakarta Commons page]
+***Use Jakarta Commons CLI for command line argument parsing [http://jakarta.apache.org/commons/cli/ Jakarta Commons CLI Page]
+***Use Xerces for XML handling [http://xerces.apache.org/xerces2-j/ Xerces page]
+***Use tfrm-util for some specific things [http://flexiaf4/secure/maven-reports/tfrm-util]
+***Order for selecting implementation to specific problem: Java standard library -> Jakarta commons -> Other 3rd party libraries -> tfrm-util -> implement it by yourself.
+**Perl:
+**Python:
+***Use standard library (modules) distributed with Python [http://docs.python.org/modindex.html]
+**PHP:
+***Use PHP standard library
+***Use PEAR libraries [http://pear.php.net/]
+***Use Zend Framework [http://framework.zend.com/]
+**Bash:
+*Always avoid hardcoding. No hardcoded paths, addresses, message contents etc. Prefer configurability.
+*Never write directly to stdout, use some logging-system instead. Not required for small applications. Use common sense.
+*Application should be always able to shutdown gracefully (release all resources)
+*Configuration files should be done in well known formats (for example XML or normal INI-file format)
+**LibTFRM also provides parser for one format (similar than INI-file formats) which is used in existing Test Applications.
+*Whenever you notice that you are writing some general purpose code, separate the implementation so it could be easily moved to external library (for example LibTFRM or tfrm-util).
+
+=== Command line input ===
+*If application accepts some command line input, following options should be used:
+**-h, --help: Print help
+**-d [level], --debug [level], --verbosity [level]: Set verbosity
+**-f [path], --file [path]: Configuration file
+**-v: Print version information (see also FP specific comments below)
+
+=== Output ===
+*Application should provide reasonable error, help and usage messages in every case.
+*Application must use exit code to signal succeess or failure.
+*Applications should be able to write logs to user-defined place. Simple applications can achieve this simply by letting user to redirect all output to somewhere.
+*If application provides complex results, these should be written in well-known format (CSV or XML for example). XML in some cases is better alternative if application produces huge amount of data since we can then use XQuery to select smaller subsets for analysis.
+**LibTFRM has own OutputManager implementation which support output formatting using different formatter and printer objects.
+
+== Testing ==
+*Implement unit tests
+**C++:
+***CppUnit [http://sourceforge.net/projects/cppunit]
+**Java:
+***Guidelines how to write unit tests [http://www.unitils.org/guidelines.html]
+***JUnit [http://www.junit.org]
+***TestNG [http://testng.org]
+***JMock [http://www.jmock.org]
+*Unit testing process should be integrated to used build-system
+*Implement unit tests which can be easily executed without complex environment setups.
+*Larger applications which consist of multiple modules should also have easily executable integration tests.
+*Use static code analysis tools
+**Java:
+***Checkstyle [http://checkstyle.sourceforge.net]
+***CPD [http://cpd.sourceforge.net]
+***PMD [http://cpd.sourceforge.net/pmd]
+***FindBugs [http://findbugs.sourceforge.net]
+***JDepend [http://www.clarkware.com/software/JDepend.html]
+***JavaNCSS [http://www.kclee.de/clemens/java/javancss/]
+*Use dynamic analysis tools
+**Java:
+***Cobertura [http://cobertura.sourceforge.net]
+*For environment where you don't have garbage collector available you should ensure that there are no memory leaks using proper tools
+
+== Documentation ==
+*If you are developing library, document sourcecodes (class and functions) so API docs can be generated
+**C++:
+***API docs can be generated with Doxygen [http://www.stack.nl/~dimitri/doxygen/]
+**Java:
+***API docs can be generated with Javadoc [http://java.sun.com/j2se/javadoc/]
+*Write a design document. ([http://pi.nokia.com/urn.htm?id=09006c3780799a5d&amp;docb=espoo11&amp;version=current&amp;document_id=13-363098 template])
+*For documentation use [https://sharenet-ims.inside.nokiasiemensnetworks.com/Properties/366829983 NSN_DocTemp_DINA4_basic_numb_col_duplex] template. You can find it from brand media downloads in Sharenet-IMS: [https://sharenet-ims.inside.nokiasiemensnetworks.com/Guest/Open/356330332 Word templates]
+
+== Version control usage ==
+*Always commit things mapped to some existing issue. Use commit messages for documenting the issue commit is addressing. 
+*The commit message should always begin with issue number. For example:
+ #245: Fixed bug.
+*In some cases we might just add some comment to sources which doesn't really affect program behavior. In those cases it is valid to commit things without adding any issue number. Use common sense:
+ Fixed typo from comments.
+
+ Implemented new unit tests.
+
+ Fixed maven plugin configuration.
+*It is valid to do multiple commits for single issue:
+ #443: Simplified database queries.
+
+ #443: Added new utility class.
+*If you are doing refactoring which doesn't affect program behavior (like refactoring shouldn't) and the task is rather small, it is allowed to commit changes without mapping it to any open issue:
+ Added new constructor.
+
+ Renamed method and some varibles.
+
+ Optimized result calculation.
+*If you are doing refactoring at the same time when you are implementing some open issue, then associate commits with that issue number.
+*Avoid addressing multiple issues with single commit:
+ #443, #322, #245: Fixed tons of bugs.
+
+*If you are merging things between branches use following comments:
+ Merged r&lt;REV-ID>: Fix for bug #456
+
+= FlexiPlatform specific applications =
+== Software Engineering Environment ==
+* Application development is done in LinSEE ([http://linsee.nokia.com/infra/index.html LinSEE Servers], [http://eslns01x.nokia.com/bi/eeserviceshomepa.nsf/document/ESLNC0016AXKUR Official LinSEE Page]) using FlexiPlatform specific activity scripts. ([http://halti.ntc.nokia.com/FlexiServer_SCM/Flexi_platform/FS_SCM_documents.htm SCM Instructions])
+*Applications are stored to Clearcase or [http://halti.ntc.nokia.com/FlexiServer_SCM/CommonSCM/product/FlexiServerPlatform/index.htm SVN] under proper FlexiPlatform branch with name SS_Test&lt;AppName>. These branches are created by flexman ([http://halti.ntc.nokia.com/FlexiServer_SCM/Flexi_platform/index.php Flexman SCM Pages]).
+
+== Document templates ==
+*[http://pi.nokia.com/urn.htm?id=09006c37801d4728&amp;docb=espoo11&amp;auth=T&amp;version=current&amp;document_id=13-144556 TA Requirement Document Template]
+*[http://pi.nokia.com/urn.htm?id=09006c37801d472e&amp;docb=espoo11&amp;auth=T&amp;version=current&amp;document_id=13-144557 TA User Guide template]
+*[http://pi.nokia.com/urn.htm?id=09006c3780799a5d&amp;docb=espoo11&amp;version=current&amp;document_id=13-363098 Design Document Template] (same link as in the previous Chapter of the Guide)
+
+== Generic rules ==
+* HAS-aware applications should be usable also without HAS
+* Consider using Flexi specific libraries for some functionalities like CppLog for logging
+* Follow the RTE specification [https://pi.inside.nokiasiemensnetworks.com/urn.htm?id=09006c37805a4986&amp;DMW_DOCBASE=espoo11&amp;auth=T&amp;version=current&amp;document_id=13-332224 for Charm], [https://pi.inside.nokiasiemensnetworks.com/urn.htm?id=09006c378114b7dc&amp;docb=espoo11&amp;auth=T&amp;version=current&amp;document_id=13-545303 for Cat]
+
+== Deployment rules ==
+* Create deployments for the applications which are service-oriented and can operate alone at the background. Creating deployment for some CLI tool isn't useful.
+* By default single RG should be enough for each application.
+* Create multiple RUs for applications where they are useful. For example if application can operate either in client or server mode, then create one RU for each. Also if the application supports multiple protocols (like Diameter) then it can be useful to also separate different default protocol specific configurations under separate RUs.
+* Create separate entry to processtypes.ldif for each RU. Each instance should use configuration file from different location. For example "FSTestDiaReceiverTCPServer" and "FSTestDiaSenderTCPServer" would use configuration files from paths "/etc/opt/Nokia/SS_TestDia/TestDiaTCPReceiverServer.xml" and "/etc/opt/Nokia/SS_TestDia/TestDiaTCPSenderServer.xml". Configuration file name can be quite directly mapped to RU-name, to make it easy for the user to understand which config-file affects to which RU.
+=== Naming convention ===
+* RG: &lt;TestAppName>. For example: 
+ /TestSNMP
+* RU: FS&lt;TestAppName>&lt;Mode>. For example: 
+ /CLA-0/FSTestSNMPServer
+ /AS-0/FSTestDiaTCPReceiverServer
+ /AS-0/FSTestDiaTCPSenderServer
+* Process: &lt;TestAppName>. For example: 
+ /CLA-0/FSTestSNMPServer/TestSNMP
+=== Usage examples ===
+* Start TestFICM server at AS-0 and client at AS-1: 
+ hascli -u /TestFICM /AS-0/FSTestFICMReceiverServer /AS-1/FSTestFICMSenderServer
+
+== Input/Output ==
+* Applications started with HAS either must not print to stdout or stderr during normal operation, or they must provide a command line option ''-q, --quiet'' that supresses all output.
+** Other applications should follow this practice.
+* Applications should provide command line option ''-d&lt;level>,--debug=&lt;level>'' for printing log messages to standard output.
+* Preferred location for the application runtime configuration files is /etc/opt/Nokia/SS_Test''Name''/etc/
+* Preferred location for the application log files is (node-local) /var/log/SS_Test''Name''/
+** If there are many instances of the application running in different nodes, and they write separate log files, each log file should have the node name included in the file name:
+  /var/log/SS_TestSIP/TestSipServer-result-AS-0.log
+  /var/log/SS_TestSIP/TestSipServer-result-AS-1.log
+* Log files must be opened for writing in append mode.
+* Read-only NFS is used in Charm and in the later builds for system image
+** /etc/opt/Nokia/SS_Test''Name''/ resides in system image
+** Diskless nodes are unaffected. They can write data and do locking as they have used to.
+** Applications running in CLA nodes must care if they write to system image. All writes to system image have to go through _active_ CLAs local sysimg mount point.
+** It is not possible to write to sysimg in inactive CLA (over NFS)
+** Meaning: 
+  /var/mnt/remote/sysimg &lt;-- Will be READ ONLY on CLA nodes
+  /var/mnt/local/sysimg  &lt;-- Is writable on ACTIVE CLA node
+
+== Version information of test applications ==
+Test applications shall have a command-line parameter -v for printing the version information as it is known in the used version control system.
+* SVN: Use for example "%Id%" (more info in SVN manual)
+* Clearcase: 
+** For textfiles, follow the instructions given in the [http://pi.nokia.com/urn.htm?id=09006c378016d35e&amp;DMW_DOCBASE=espoo11&amp;auth=T&amp;version=current&amp;document_id=13-127169 RPM grannyguide for FlexiServer product family]
+** For executables, this approach is not working. Simplest possible workaround is having a version.txt file that gets updated and is then referred or read+printed. Another workaround could also use the information which is already in the executable file and can be seen using "objdump --section=.versionlabelinfo -s ''&lt;my_executable>''".
+
+= Non-Flexiplatform specific applications =
+== Software Engineering Environment ==
+* Applications are stored to our own Subversion server (svn root: [http://sugar.fp.nsn-rdnet.net/svn/tfrm http://sugar.fp.nsn-rdnet.net/svn/tfrm])
+** New directory should be created in the root of the repository for larger applications. 
+** Small and one-shot scripts should be stored under Scripts directory.
+* flexiaf5 (that is the FlexiTAF development host) can be used for generic application development.
+** Don't use flexiaf5 for CPU-intensive testing, or for any purposes that use resources like sockets or IO extensively.
+
+= Traffic generators =
+
+Traffic generator is catch-all term for all test applications that run for a while, generate or listen to some kind of messages and measure the traffic. Examples: Plain TCP client/server (SS_TestSIP), Protocol specific tool (SS_TestDIA), application for generating log messages/alarms/notifications (SS_TestSNMP).
+
+All traffic generators must be stable and reliable enough for stability testing. It must be taken into account that the application may run for hundreds of hours and during that time it may generate billions of messages. The traffic generator is not the only application running in the target during the test.
+
+== Input ==
+
+* Application must be configurable. 
+** Send rate must be configurable. Measuring only maximum throughput in a busy loop is not sufficient.
+
+== Output ==
+
+* Application should write separate status log and result log.
+* Status log is echoed to standard output if a command line option ''-d &lt;level>, --debug=&lt;level>'' is given. 
+* Result log is echoed to standard output if a command line option ''-r &lt;level>, --result=&lt;level>'' is given. 
+* Each line in a log file must start with a timestamp. 
+** Format: ''yyyy-mm-dd hh:mm:ss'' (Simplified [http://en.wikipedia.org/wiki/ISO_8601 ISO 8601], date +"%F %T"). 
+** Fractions of second can be appended if finer granularity is required. They are separated from full seconds by a period mark (''hh:mm:ss.sss'').
+* When the application terminates, summary of the generated traffic must be printed to the status log. 
+** This summary includes information like total number of messages/transactions, total amount of transferred data in megabytes, average message rate, number of reconnections, maximum number of associations, errors per second etc.
+* Result log consists of interesting statistical data that describes the traffic. Lines are printed with configurable fixed interval.
+** Data is organized in fixed-width columns. 
+** A header line must be printed in the beginning of data and can be repeated on regular interval.
+*** Header printing interval should be configurable.
+** The information on each line should be the measured traffic after the previous line. Output columns with cumulative data should be used with discretion.
+** Printing is allowed only with pre-defined intervals and timestamps (see table below).
+* Allowed printing intervals and timestamps for result log
+{| class="wikitable"
+|- 
+!Output Interval || When to Print
+|-
+|1 s	|| hh:mm:00, hh:mm:01 … hh:mm:59 
+|-
+|5 s	|| hh:mm:00, hh:mm:05 … hh:mm:55
+|-
+|10 s	|| hh:mm:00, hh:mm:10 … hh:mm:50
+|-
+|30 s	|| hh:mm:00, hh:mm:30
+|-
+|1 min	|| hh:00:00, hh:01:00 … hh:59:00
+|-
+|5 min	|| hh:00:00, hh:05:00 … hh:55:00
+|-
+|10 min	|| hh:00:00, hh:10:00 … hh:50:00
+|-
+|30 min	|| hh:00:00, hh:30:00
+|-
+|1 h	|| 00:00:00, 01:00:00 … 23:00:00
+|}
+* Example of status log:
+  2000-01-01 08:00:00 TestAppl starting 
+  2000-01-01 08:00:00 Listening to port 1234
+  2000-01-01 08:00:03 Accepted connection
+  2000-01-01 08:00:03 Accepted connection  
+  2000-01-01 08:00:40 Caught SIGTERM. Terminating...
+  2000-01-01 08:00:40 Closed connection
+  2000-01-01 08:00:40 Closed connection
+  2000-01-01 08:00:40 Total numer of messages received: 4000 msgs
+  2000-01-01 08:00:40 Total numer of payload received:  145 MB
+  2000-01-01 08:00:40 Messages/sec:                     112.22 msgs/s
+  2000-01-01 08:00:40 Payload/sec:                      23.234 MB/s
+* Example of result log:
+  time                     msgs/sec    errors/sec 
+  2000-01-01 08:00:00           0.6           0.0 
+  2000-01-01 08:00:10           0.4           0.0 
+  2000-01-01 08:00:20          15.3           0.2
+  2000-01-01 08:00:30          18.3           1.0 
+  2000-01-01 08:00:40          12.3           4.6
+* LibTFRM contains classes for producing output that conforms with this definition.
+
+== Reliability ==
+* Choose datatypes wisely. Ints do overflow. Double cannot be incremented by 1 much longer than int. Long long is usually sufficient for counters.
+* Try to keep the application footprint small
+**Do not use busy loops
+**Test memory leaks
+**Avoid excessive file I/O
+**Do not allocate more memory than necessary
+</textarea><div class='editOptions'>
+<span class="mw-summary" id="wpSummaryLabel"><label for="wpSummary">Summary:</label></span> <input class="mw-summary" id="wpSummary" maxlength="200" tabindex="1" size="60" spellcheck="true" title="Enter a short summary [b]" accesskey="b" name="wpSummary" /><div class='editCheckboxes'>
+</div>
+<div id="editpage-copywarn">
+<p>Please note that all contributions to SugarWiki may be edited, altered, or removed by other contributors.
+If you do not want your writing to be edited mercilessly, then do not submit it here.<br />
+You are also promising us that you wrote this yourself, or copied it from a public domain or similar free resource (see <a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=SugarWiki:Copyrights&amp;action=edit&amp;redlink=1" class="new" title="SugarWiki:Copyrights (page does not exist)">SugarWiki:Copyrights</a> for details).
+<b>Do not submit copyrighted work without permission!</b>
+</p>
+</div>
+<div class='editButtons'>
+<input id="wpSave" name="wpSave" type="submit" tabindex="3" value="Save page" accesskey="s" title="Save your changes [s]" />
+<input id="wpPreview" name="wpPreview" type="submit" tabindex="4" value="Show preview" accesskey="p" title="Preview your changes, please use this before saving! [p]" />
+
+<input id="wpDiff" name="wpDiff" type="submit" tabindex="5" value="Show changes" accesskey="v" title="Show which changes you made to the text [v]" />
+	<span class='cancelLink'><a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php/TFRM_Software_Development_Guide" title="TFRM Software Development Guide" id="mw-editform-cancel">Cancel</a> | </span>
+	<span class='editHelp'><a target="helpwindow" href="http://sugar.fp.nsn-rdnet.net/wiki/index.php/Help:Editing">Editing help</a> (opens in new window)</span>
+</div><!-- editButtons -->
+</div><!-- editOptions -->
+
+<input type="hidden" value="+\" name="wpEditToken" />
+<div class="mw-editTools"></div>
+<div class="templatesUsed"></div><div class="hiddencats"></div>
+</form>
+</div><div class="printfooter">
+Retrieved from "<a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php/TFRM_Software_Development_Guide">http://sugar.fp.nsn-rdnet.net/wiki/index.php/TFRM_Software_Development_Guide</a>"</div>
+		<div id='catlinks' class='catlinks catlinks-allhidden'></div>		<!-- end content -->
+				<div class="visualClear"></div>
+	</div>
+</div></div>
+<div id="column-one">
+	<h2>Navigation menu</h2>
+	<div id="p-cactions" class="portlet" role="navigation">
+		<h3>Views</h3>
+		<div class="pBody">
+			<ul>
+				<li id="ca-nstab-main" class="selected"><a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php/TFRM_Software_Development_Guide" primary="1" context="subject" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=Talk:TFRM_Software_Development_Guide&amp;action=edit&amp;redlink=1" primary="1" context="talk" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-edit" class="selected"><a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=TFRM_Software_Development_Guide&amp;action=edit" primary="1" title="You can edit this page. Please use the preview button before saving">Edit</a></li>
+				<li id="ca-history"><a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=TFRM_Software_Development_Guide&amp;action=history" rel="archives" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal" role="navigation">
+		<h3>Personal tools</h3>
+		<div class="pBody">
+			<ul>
+				<li id="pt-anonuserpage"><a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php/User:10.143.81.182" class="new" title="The user page for the IP address you are editing as [.]" accesskey=".">10.143.81.182</a></li>
+				<li id="pt-anontalk"><a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php/User_talk:10.143.81.182" class="new" title="Discussion about edits from this IP address [n]" accesskey="n">Talk for this IP address</a></li>
+				<li id="pt-createaccount"><a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=Special:UserLogin&amp;returnto=TFRM+Software+Development+Guide&amp;returntoquery=action%3Dedit&amp;type=signup">Create account</a></li>
+				<li id="pt-anonlogin"><a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=Special:UserLogin&amp;returnto=TFRM+Software+Development+Guide&amp;returntoquery=action%3Dedit" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo" role="banner">
+<a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php/Main_Page" style="background-image: url(http://sugar.fp.nsn-rdnet.net/wiki/skins/common/images/wiki.png);" title="Visit the main page"></a>
+	</div>
+	<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+			<ul>
+				<li id="n-mainpage-description"><a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+				<li id="n-portal"><a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php/SugarWiki:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li>
+				<li id="n-currentevents"><a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php/SugarWiki:Current_events" title="Find background information on current events">Current events</a></li>
+				<li id="n-recentchanges"><a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+				<li id="n-randompage"><a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+				<li id="n-help"><a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php/Help:Contents" title="The place to find out">Help</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet" role="search">
+		<h3><label for="searchInput">Search</label></h3>
+		<div id="searchBody" class="pBody">
+			<form action="http://sugar.fp.nsn-rdnet.net/wiki/index.php" id="searchform">
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input type="search" name="search" title="Search SugarWiki [f]" accesskey="f" id="searchInput" />
+				<input type="submit" name="go" value="Go" title="Go to a page with this exact name if exists" id="searchGoButton" class="searchButton" />&#160;
+				<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton" />
+			</form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb" role="navigation">
+		<h3>Toolbox</h3>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php/Special:WhatLinksHere/TFRM_Software_Development_Guide" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php/Special:RecentChangesLinked/TFRM_Software_Development_Guide" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+				<li id="t-specialpages"><a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-info"><a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=TFRM_Software_Development_Guide&amp;action=info">Page information</a></li>
+			</ul>
+		</div>
+	</div>
+</div><!-- end of the left (by default at least) column -->
+<div class="visualClear"></div>
+<div id="footer" role="contentinfo">
+	<div id="f-poweredbyico">
+		<a href="http://www.mediawiki.org/"><img src="http://sugar.fp.nsn-rdnet.net/wiki/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>
+	</div>
+	<ul id="f-list">
+		<li id="privacy"><a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php/SugarWiki:Privacy_policy" title="SugarWiki:Privacy policy">Privacy policy</a></li>
+		<li id="about"><a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php/SugarWiki:About" title="SugarWiki:About">About SugarWiki</a></li>
+		<li id="disclaimer"><a href="http://sugar.fp.nsn-rdnet.net/wiki/index.php/SugarWiki:General_disclaimer" title="SugarWiki:General disclaimer">Disclaimers</a></li>
+	</ul>
+</div>
+</div>
+<script>if(window.mw){
+mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi"], null, true);
+}</script>
+<script>if(window.mw){
+mw.loader.using("mediawiki.action.edit", function() {mw.toolbar.addButton("http://sugar.fp.nsn-rdnet.net/wiki/skins/common/images/button_bold.png", "Bold text", "\'\'\'", "\'\'\'", "Bold text", "mw-editbutton-bold");
+mw.toolbar.addButton("http://sugar.fp.nsn-rdnet.net/wiki/skins/common/images/button_italic.png", "Italic text", "\'\'", "\'\'", "Italic text", "mw-editbutton-italic");
+mw.toolbar.addButton("http://sugar.fp.nsn-rdnet.net/wiki/skins/common/images/button_link.png", "Internal link", "[[", "]]", "Link title", "mw-editbutton-link");
+mw.toolbar.addButton("http://sugar.fp.nsn-rdnet.net/wiki/skins/common/images/button_extlink.png", "External link (remember http:// prefix)", "[", "]", "http://www.example.com link title/", "mw-editbutton-extlink");
+mw.toolbar.addButton("http://sugar.fp.nsn-rdnet.net/wiki/skins/common/images/button_headline.png", "Level 2 headline", "\n== ", " ==\n", "Headline text", "mw-editbutton-headline");
+mw.toolbar.addButton("http://sugar.fp.nsn-rdnet.net/wiki/skins/common/images/button_nowiki.png", "Ignore wiki formatting", "\x3cnowiki\x3e", "\x3c/nowiki\x3e", "Insert non-formatted text here", "mw-editbutton-nowiki");
+mw.toolbar.addButton("http://sugar.fp.nsn-rdnet.net/wiki/skins/common/images/button_sig.png", "Your signature with timestamp", "--~~~~", "", "", "mw-editbutton-signature");
+mw.toolbar.addButton("http://sugar.fp.nsn-rdnet.net/wiki/skins/common/images/button_hr.png", "Horizontal line (use sparingly)", "\n----\n", "", "", "mw-editbutton-hr");
+
+// Create button bar
+$(function() { mw.toolbar.init(); } );
+});
+}</script>
+<script src="http://sugar.fp.nsn-rdnet.net/wiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=monobook&amp;*"></script>
+<!-- Served in 0.264 secs. --></body>
+<!-- Mirrored from sugar.fp.nsn-rdnet.net/wiki/index.php?title=TFRM_Software_Development_Guide&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 23 Aug 2024 05:17:26 GMT -->
+</html>

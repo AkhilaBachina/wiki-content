@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+
+<!-- Mirrored from sugar.fp.nsn-rdnet.net/wiki/index.php?title=TFRM_Software_Development_Guide&printable=yes by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 23 Aug 2024 05:17:29 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>TFRM Software Development Guide - SugarWiki</title>
+<meta charset="UTF-8" />
+<meta name="generator" content="MediaWiki 1.21.1" />
+<meta name="robots" content="noindex,follow" />
+<link rel="alternate" type="application/x-wiki" title="Edit" href="index74e2.html?title=TFRM_Software_Development_Guide&amp;action=edit" />
+<link rel="edit" title="Edit" href="index74e2.html?title=TFRM_Software_Development_Guide&amp;action=edit" />
+<link rel="shortcut icon" href="http://sugar.fp.nsn-rdnet.net/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.html" title="SugarWiki (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="api251f.html?action=rsd" />
+<link rel="alternate" type="application/atom+xml" title="SugarWiki Atom feed" href="index890f.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="load618b.html?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cskins.monobook&amp;only=styles&amp;printable=1&amp;skin=monobook&amp;*" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="load711e.html?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;printable=1&amp;skin=monobook&amp;*" />
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: wikidb:resourceloader:filter:minify-css:7:7a3748d34e6456ae8d0f053363f745f7 */</style>
+
+<script src="loadaa7b.html?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;printable=1&amp;skin=monobook&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"TFRM_Software_Development_Guide","wgTitle":"TFRM Software Development Guide","wgCurRevisionId":7063,"wgArticleId":1758,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"TFRM_Software_Development_Guide","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"monobook","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,"watchlistdays":3,
+"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: wikidb:resourceloader:filter:minify-js:7:a02a7fa766593347c4dbb130a7c3803e */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-TFRM_Software_Development_Guide skin-monobook action-view">
+<div id="globalWrapper">
+<div id="column-content"><div id="content" class="mw-body-primary" role="main">
+	<a id="top"></a>
+	
+	<h1 id="firstHeading" class="firstHeading" lang="en"><span dir="auto">TFRM Software Development Guide</span></h1>
+	<div id="bodyContent" class="mw-body">
+		<div id="siteSub">From SugarWiki</div>
+		<div id="contentSub"></div>
+		<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+		<!-- start content -->
+<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Introduction"><span class="tocnumber">1</span> <span class="toctext">Introduction</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Basics"><span class="tocnumber">2</span> <span class="toctext">Basics</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Quality_requirements"><span class="tocnumber">2.1</span> <span class="toctext">Quality requirements</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Stability_testing_requirements"><span class="tocnumber">2.2</span> <span class="toctext">Stability testing requirements</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#General_Rules"><span class="tocnumber">3</span> <span class="toctext">General Rules</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Files.2C_Building.2C_Distribution"><span class="tocnumber">3.1</span> <span class="toctext">Files, Building, Distribution</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Design"><span class="tocnumber">3.2</span> <span class="toctext">Design</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Implementation"><span class="tocnumber">3.3</span> <span class="toctext">Implementation</span></a>
+<ul>
+<li class="toclevel-3 tocsection-9"><a href="#Command_line_input"><span class="tocnumber">3.3.1</span> <span class="toctext">Command line input</span></a></li>
+<li class="toclevel-3 tocsection-10"><a href="#Output"><span class="tocnumber">3.3.2</span> <span class="toctext">Output</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-11"><a href="#Testing"><span class="tocnumber">3.4</span> <span class="toctext">Testing</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Documentation"><span class="tocnumber">3.5</span> <span class="toctext">Documentation</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Version_control_usage"><span class="tocnumber">3.6</span> <span class="toctext">Version control usage</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-14"><a href="#FlexiPlatform_specific_applications"><span class="tocnumber">4</span> <span class="toctext">FlexiPlatform specific applications</span></a>
+<ul>
+<li class="toclevel-2 tocsection-15"><a href="#Software_Engineering_Environment"><span class="tocnumber">4.1</span> <span class="toctext">Software Engineering Environment</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#Document_templates"><span class="tocnumber">4.2</span> <span class="toctext">Document templates</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#Generic_rules"><span class="tocnumber">4.3</span> <span class="toctext">Generic rules</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#Deployment_rules"><span class="tocnumber">4.4</span> <span class="toctext">Deployment rules</span></a>
+<ul>
+<li class="toclevel-3 tocsection-19"><a href="#Naming_convention"><span class="tocnumber">4.4.1</span> <span class="toctext">Naming convention</span></a></li>
+<li class="toclevel-3 tocsection-20"><a href="#Usage_examples"><span class="tocnumber">4.4.2</span> <span class="toctext">Usage examples</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-21"><a href="#Input.2FOutput"><span class="tocnumber">4.5</span> <span class="toctext">Input/Output</span></a></li>
+<li class="toclevel-2 tocsection-22"><a href="#Version_information_of_test_applications"><span class="tocnumber">4.6</span> <span class="toctext">Version information of test applications</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-23"><a href="#Non-Flexiplatform_specific_applications"><span class="tocnumber">5</span> <span class="toctext">Non-Flexiplatform specific applications</span></a>
+<ul>
+<li class="toclevel-2 tocsection-24"><a href="#Software_Engineering_Environment_2"><span class="tocnumber">5.1</span> <span class="toctext">Software Engineering Environment</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-25"><a href="#Traffic_generators"><span class="tocnumber">6</span> <span class="toctext">Traffic generators</span></a>
+<ul>
+<li class="toclevel-2 tocsection-26"><a href="#Input"><span class="tocnumber">6.1</span> <span class="toctext">Input</span></a></li>
+<li class="toclevel-2 tocsection-27"><a href="#Output_2"><span class="tocnumber">6.2</span> <span class="toctext">Output</span></a></li>
+<li class="toclevel-2 tocsection-28"><a href="#Reliability"><span class="tocnumber">6.3</span> <span class="toctext">Reliability</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Introduction"> Introduction </span></h1>
+<p>Test applications are real production software. They must work in reliable, predictable and well documented manner. Unfortunately, test applications are sometimes initially developed thinking only one testing phase, like module testing, and one user, like the author him/herself. Usually the same applications are needed in other test phases, and even by other products later on. They are also used and updated for maintetenance testing long after original "final" release. 
+</p><p>Re-writing and improving applications by different people consumes huge amout of resources. In the long term it saves effort for everybody to create good quality in the first place. But don't be afraid to release the code when it is "good enough" for current needs.
+</p>
+<h1> <span class="mw-headline" id="Basics"> Basics </span></h1>
+<p>The requirement level for the applications depends on its intended use. If there is no reason the decide otherwise the test applications should be developed stability testing in mind. 
+</p>
+<h2> <span class="mw-headline" id="Quality_requirements"> Quality requirements </span></h2>
+<ul><li> Make code readable by others. Also the test applications must be easy to debug and fix if and when problems arise. Write comments. Don't use cryptic variable and function names.
+</li><li> Remember the quality. The better the design the easier it is to correct problems and add features later on.
+</li><li> Don't be too clever. Write code that can easily be undestood and modified by others. Document complex and novel solutions clearly.
+</li><li> Think of the users. The applications must be intuitive to use. They must detect errors and provide help. Segfault is not a proper response for a typo in the configuration file. Application output must be such that user can verify that the feature under test is working properly, or if the feature is broken the test application must provide helpful diagnostic messages.
+</li></ul>
+<h2> <span class="mw-headline" id="Stability_testing_requirements"> Stability testing requirements </span></h2>
+<ul><li> Applications must survive running for two weeks without interruption. In the meantime the library or the feature that the application is testing can be stopped and started many times or it may crash. Test application cannot get confused by this. 
+</li><li> The application must provide meaningful result logs with reasonable amout of data during the long execution. It's not allowed to print results only at the end.
+</li><li> The test application footprint must be as small as possbile; Leaking memory or waiting for random event in a busy loop is not acceptable. Nobody wants to see a test case to fail after 10 days because the test application causes the system to crash.
+</li></ul>
+<h1> <span class="mw-headline" id="General_Rules"> General Rules </span></h1>
+<h2> <span class="mw-headline" id="Files.2C_Building.2C_Distribution"> Files, Building, Distribution</span></h2>
+<ul><li>Everything has to be stored in version control
+</li><li>Application should be distributable as a single package
+</li><li>All releases have some unique version number which is tagged in used version control. The code of tagged release shall never change.
+</li><li>Application should be buildable with single command
+<ul><li>You should use some make-system like Ant <a rel="nofollow" class="external autonumber" href="http://ant.apache.org/">[1]</a>, Make, Clearmake <a rel="nofollow" class="external autonumber" href="http://halti.ntc.nokia.com/FlexiServer_SCM/Flexi_platform/FS_SCM_documents.htm">[2]</a>, Automake, Maven <a rel="nofollow" class="external autonumber" href="http://maven.apache.org/">[3]</a> etc. Ant is very easy to use and can be also used for c++ applications.
+</li></ul>
+</li><li>Application should be startable with single command
+</li><li>Application should be packaged/released with single command
+<ul><li>You should provide some simple start script or binary which can be started.
+</li></ul>
+</li><li>Use issuetracker for documenting defects and improvement ideas during development and maintenance <a rel="nofollow" class="external autonumber" href="http://sugar/tfrm/trac">[4]</a>
+</li></ul>
+<h2> <span class="mw-headline" id="Design"> Design </span></h2>
+<ul><li>Prefer UML diagrams when writing designs. Visio and Rational Rose are good tools for creating UML-diagrams.
+</li></ul>
+<h2> <span class="mw-headline" id="Implementation"> Implementation </span></h2>
+<ul><li>Utilize well known libraries
+<ul><li>C++:
+<ul><li>Use STL for everything you can
+</li><li>If something is missing from STL, check Boost <a rel="nofollow" class="external autonumber" href="http://www.boost.org/">[5]</a>
+</li><li>Use TCLAP for command line argument parsing <a rel="nofollow" class="external text" href="http://sugar/tfrm/docs/tclap/index.html">API docs</a>
+</li><li>Use LibTFRM for some specific things <a rel="nofollow" class="external text" href="http://sugar/tfrm/docs/libtfrm/index.html">API docs</a>. It provides mostly helper classes for common problems encountered during test application development (how to handle input/output, reporting, configurability, message sending loop etc.).
+</li><li>Use Xerces for XML handling (LibTFRM has helper classes for Xerces) <a rel="nofollow" class="external text" href="http://xml.apache.org/xerces-c/">XercesC page</a>
+</li><li>Use threading library for threads (pthread, zthread <a rel="nofollow" class="external text" href="http://zthread.sourceforge.net/">ZThread page</a> etc)
+</li><li>Order for selecting implementation to specific problem: STL -&gt; Boost -&gt; Other 3rd party libraries -&gt; LibTFRM -&gt; implement it by yourself.
+</li></ul>
+</li><li>Java:
+<ul><li>If you think something is missing from Java Standard Library check Jakarta Commons libaries <a rel="nofollow" class="external text" href="http://jakarta.apache.org/commons/">Jakarta Commons page</a>
+</li><li>Use Jakarta Commons CLI for command line argument parsing <a rel="nofollow" class="external text" href="http://jakarta.apache.org/commons/cli/">Jakarta Commons CLI Page</a>
+</li><li>Use Xerces for XML handling <a rel="nofollow" class="external text" href="http://xerces.apache.org/xerces2-j/">Xerces page</a>
+</li><li>Use tfrm-util for some specific things <a rel="nofollow" class="external autonumber" href="http://flexiaf4/secure/maven-reports/tfrm-util">[6]</a>
+</li><li>Order for selecting implementation to specific problem: Java standard library -&gt; Jakarta commons -&gt; Other 3rd party libraries -&gt; tfrm-util -&gt; implement it by yourself.
+</li></ul>
+</li><li>Perl:
+</li><li>Python:
+<ul><li>Use standard library (modules) distributed with Python <a rel="nofollow" class="external autonumber" href="http://docs.python.org/modindex.html">[7]</a>
+</li></ul>
+</li><li>PHP:
+<ul><li>Use PHP standard library
+</li><li>Use PEAR libraries <a rel="nofollow" class="external autonumber" href="http://pear.php.net/">[8]</a>
+</li><li>Use Zend Framework <a rel="nofollow" class="external autonumber" href="http://framework.zend.com/">[9]</a>
+</li></ul>
+</li><li>Bash:
+</li></ul>
+</li><li>Always avoid hardcoding. No hardcoded paths, addresses, message contents etc. Prefer configurability.
+</li><li>Never write directly to stdout, use some logging-system instead. Not required for small applications. Use common sense.
+</li><li>Application should be always able to shutdown gracefully (release all resources)
+</li><li>Configuration files should be done in well known formats (for example XML or normal INI-file format)
+<ul><li>LibTFRM also provides parser for one format (similar than INI-file formats) which is used in existing Test Applications.
+</li></ul>
+</li><li>Whenever you notice that you are writing some general purpose code, separate the implementation so it could be easily moved to external library (for example LibTFRM or tfrm-util).
+</li></ul>
+<h3> <span class="mw-headline" id="Command_line_input"> Command line input </span></h3>
+<ul><li>If application accepts some command line input, following options should be used:
+<ul><li>-h, --help: Print help
+</li><li>-d [level], --debug [level], --verbosity [level]: Set verbosity
+</li><li>-f [path], --file [path]: Configuration file
+</li><li>-v: Print version information (see also FP specific comments below)
+</li></ul>
+</li></ul>
+<h3> <span class="mw-headline" id="Output"> Output </span></h3>
+<ul><li>Application should provide reasonable error, help and usage messages in every case.
+</li><li>Application must use exit code to signal succeess or failure.
+</li><li>Applications should be able to write logs to user-defined place. Simple applications can achieve this simply by letting user to redirect all output to somewhere.
+</li><li>If application provides complex results, these should be written in well-known format (CSV or XML for example). XML in some cases is better alternative if application produces huge amount of data since we can then use XQuery to select smaller subsets for analysis.
+<ul><li>LibTFRM has own OutputManager implementation which support output formatting using different formatter and printer objects.
+</li></ul>
+</li></ul>
+<h2> <span class="mw-headline" id="Testing"> Testing </span></h2>
+<ul><li>Implement unit tests
+<ul><li>C++:
+<ul><li>CppUnit <a rel="nofollow" class="external autonumber" href="http://sourceforge.net/projects/cppunit">[10]</a>
+</li></ul>
+</li><li>Java:
+<ul><li>Guidelines how to write unit tests <a rel="nofollow" class="external autonumber" href="http://www.unitils.org/guidelines.html">[11]</a>
+</li><li>JUnit <a rel="nofollow" class="external autonumber" href="http://www.junit.org/">[12]</a>
+</li><li>TestNG <a rel="nofollow" class="external autonumber" href="http://testng.org/">[13]</a>
+</li><li>JMock <a rel="nofollow" class="external autonumber" href="http://www.jmock.org/">[14]</a>
+</li></ul>
+</li></ul>
+</li><li>Unit testing process should be integrated to used build-system
+</li><li>Implement unit tests which can be easily executed without complex environment setups.
+</li><li>Larger applications which consist of multiple modules should also have easily executable integration tests.
+</li><li>Use static code analysis tools
+<ul><li>Java:
+<ul><li>Checkstyle <a rel="nofollow" class="external autonumber" href="http://checkstyle.sourceforge.net/">[15]</a>
+</li><li>CPD <a rel="nofollow" class="external autonumber" href="http://cpd.sourceforge.net/">[16]</a>
+</li><li>PMD <a rel="nofollow" class="external autonumber" href="http://cpd.sourceforge.net/pmd">[17]</a>
+</li><li>FindBugs <a rel="nofollow" class="external autonumber" href="http://findbugs.sourceforge.net/">[18]</a>
+</li><li>JDepend <a rel="nofollow" class="external autonumber" href="http://www.clarkware.com/software/JDepend.html">[19]</a>
+</li><li>JavaNCSS <a rel="nofollow" class="external autonumber" href="http://www.kclee.de/clemens/java/javancss/">[20]</a>
+</li></ul>
+</li></ul>
+</li><li>Use dynamic analysis tools
+<ul><li>Java:
+<ul><li>Cobertura <a rel="nofollow" class="external autonumber" href="http://cobertura.sourceforge.net/">[21]</a>
+</li></ul>
+</li></ul>
+</li><li>For environment where you don't have garbage collector available you should ensure that there are no memory leaks using proper tools
+</li></ul>
+<h2> <span class="mw-headline" id="Documentation"> Documentation </span></h2>
+<ul><li>If you are developing library, document sourcecodes (class and functions) so API docs can be generated
+<ul><li>C++:
+<ul><li>API docs can be generated with Doxygen <a rel="nofollow" class="external autonumber" href="http://www.stack.nl/~dimitri/doxygen/">[22]</a>
+</li></ul>
+</li><li>Java:
+<ul><li>API docs can be generated with Javadoc <a rel="nofollow" class="external autonumber" href="http://java.sun.com/j2se/javadoc/">[23]</a>
+</li></ul>
+</li></ul>
+</li><li>Write a design document. (<a rel="nofollow" class="external text" href="http://pi.nokia.com/urn.htm?id=09006c3780799a5d&amp;docb=espoo11&amp;version=current&amp;document_id=13-363098">template</a>)
+</li><li>For documentation use <a rel="nofollow" class="external text" href="https://sharenet-ims.inside.nokiasiemensnetworks.com/Properties/366829983">NSN_DocTemp_DINA4_basic_numb_col_duplex</a> template. You can find it from brand media downloads in Sharenet-IMS: <a rel="nofollow" class="external text" href="https://sharenet-ims.inside.nokiasiemensnetworks.com/Guest/Open/356330332">Word templates</a>
+</li></ul>
+<h2> <span class="mw-headline" id="Version_control_usage"> Version control usage </span></h2>
+<ul><li>Always commit things mapped to some existing issue. Use commit messages for documenting the issue commit is addressing. 
+</li><li>The commit message should always begin with issue number. For example:
+</li></ul>
+<pre>#245: Fixed bug.
+</pre>
+<ul><li>In some cases we might just add some comment to sources which doesn't really affect program behavior. In those cases it is valid to commit things without adding any issue number. Use common sense:
+</li></ul>
+<pre>Fixed typo from comments.
+</pre>
+<pre>Implemented new unit tests.
+</pre>
+<pre>Fixed maven plugin configuration.
+</pre>
+<ul><li>It is valid to do multiple commits for single issue:
+</li></ul>
+<pre>#443: Simplified database queries.
+</pre>
+<pre>#443: Added new utility class.
+</pre>
+<ul><li>If you are doing refactoring which doesn't affect program behavior (like refactoring shouldn't) and the task is rather small, it is allowed to commit changes without mapping it to any open issue:
+</li></ul>
+<pre>Added new constructor.
+</pre>
+<pre>Renamed method and some varibles.
+</pre>
+<pre>Optimized result calculation.
+</pre>
+<ul><li>If you are doing refactoring at the same time when you are implementing some open issue, then associate commits with that issue number.
+</li><li>Avoid addressing multiple issues with single commit:
+</li></ul>
+<pre>#443, #322, #245: Fixed tons of bugs.
+</pre>
+<ul><li>If you are merging things between branches use following comments:
+</li></ul>
+<pre>Merged r&lt;REV-ID&gt;: Fix for bug #456
+</pre>
+<h1> <span class="mw-headline" id="FlexiPlatform_specific_applications"> FlexiPlatform specific applications </span></h1>
+<h2> <span class="mw-headline" id="Software_Engineering_Environment"> Software Engineering Environment </span></h2>
+<ul><li> Application development is done in LinSEE (<a rel="nofollow" class="external text" href="http://linsee.nokia.com/infra/index.html">LinSEE Servers</a>, <a rel="nofollow" class="external text" href="http://eslns01x.nokia.com/bi/eeserviceshomepa.nsf/document/ESLNC0016AXKUR">Official LinSEE Page</a>) using FlexiPlatform specific activity scripts. (<a rel="nofollow" class="external text" href="http://halti.ntc.nokia.com/FlexiServer_SCM/Flexi_platform/FS_SCM_documents.htm">SCM Instructions</a>)
+</li><li>Applications are stored to Clearcase or <a rel="nofollow" class="external text" href="http://halti.ntc.nokia.com/FlexiServer_SCM/CommonSCM/product/FlexiServerPlatform/index.htm">SVN</a> under proper FlexiPlatform branch with name SS_Test&lt;AppName&gt;. These branches are created by flexman (<a rel="nofollow" class="external text" href="http://halti.ntc.nokia.com/FlexiServer_SCM/Flexi_platform/index.php">Flexman SCM Pages</a>).
+</li></ul>
+<h2> <span class="mw-headline" id="Document_templates"> Document templates </span></h2>
+<ul><li><a rel="nofollow" class="external text" href="http://pi.nokia.com/urn.htm?id=09006c37801d4728&amp;docb=espoo11&amp;auth=T&amp;version=current&amp;document_id=13-144556">TA Requirement Document Template</a>
+</li><li><a rel="nofollow" class="external text" href="http://pi.nokia.com/urn.htm?id=09006c37801d472e&amp;docb=espoo11&amp;auth=T&amp;version=current&amp;document_id=13-144557">TA User Guide template</a>
+</li><li><a rel="nofollow" class="external text" href="http://pi.nokia.com/urn.htm?id=09006c3780799a5d&amp;docb=espoo11&amp;version=current&amp;document_id=13-363098">Design Document Template</a> (same link as in the previous Chapter of the Guide)
+</li></ul>
+<h2> <span class="mw-headline" id="Generic_rules"> Generic rules </span></h2>
+<ul><li> HAS-aware applications should be usable also without HAS
+</li><li> Consider using Flexi specific libraries for some functionalities like CppLog for logging
+</li><li> Follow the RTE specification <a rel="nofollow" class="external text" href="https://pi.inside.nokiasiemensnetworks.com/urn.htm?id=09006c37805a4986&amp;DMW_DOCBASE=espoo11&amp;auth=T&amp;version=current&amp;document_id=13-332224">for Charm</a>, <a rel="nofollow" class="external text" href="https://pi.inside.nokiasiemensnetworks.com/urn.htm?id=09006c378114b7dc&amp;docb=espoo11&amp;auth=T&amp;version=current&amp;document_id=13-545303">for Cat</a>
+</li></ul>
+<h2> <span class="mw-headline" id="Deployment_rules"> Deployment rules </span></h2>
+<ul><li> Create deployments for the applications which are service-oriented and can operate alone at the background. Creating deployment for some CLI tool isn't useful.
+</li><li> By default single RG should be enough for each application.
+</li><li> Create multiple RUs for applications where they are useful. For example if application can operate either in client or server mode, then create one RU for each. Also if the application supports multiple protocols (like Diameter) then it can be useful to also separate different default protocol specific configurations under separate RUs.
+</li><li> Create separate entry to processtypes.ldif for each RU. Each instance should use configuration file from different location. For example "FSTestDiaReceiverTCPServer" and "FSTestDiaSenderTCPServer" would use configuration files from paths "/etc/opt/Nokia/SS_TestDia/TestDiaTCPReceiverServer.xml" and "/etc/opt/Nokia/SS_TestDia/TestDiaTCPSenderServer.xml". Configuration file name can be quite directly mapped to RU-name, to make it easy for the user to understand which config-file affects to which RU.
+</li></ul>
+<h3> <span class="mw-headline" id="Naming_convention"> Naming convention </span></h3>
+<ul><li> RG: &lt;TestAppName&gt;. For example: 
+</li></ul>
+<pre>/TestSNMP
+</pre>
+<ul><li> RU: FS&lt;TestAppName&gt;&lt;Mode&gt;. For example: 
+</li></ul>
+<pre>/CLA-0/FSTestSNMPServer
+/AS-0/FSTestDiaTCPReceiverServer
+/AS-0/FSTestDiaTCPSenderServer
+</pre>
+<ul><li> Process: &lt;TestAppName&gt;. For example: 
+</li></ul>
+<pre>/CLA-0/FSTestSNMPServer/TestSNMP
+</pre>
+<h3> <span class="mw-headline" id="Usage_examples"> Usage examples </span></h3>
+<ul><li> Start TestFICM server at AS-0 and client at AS-1: 
+</li></ul>
+<pre>hascli -u /TestFICM /AS-0/FSTestFICMReceiverServer /AS-1/FSTestFICMSenderServer
+</pre>
+<h2> <span class="mw-headline" id="Input.2FOutput"> Input/Output </span></h2>
+<ul><li> Applications started with HAS either must not print to stdout or stderr during normal operation, or they must provide a command line option <i>-q, --quiet</i> that supresses all output.
+<ul><li> Other applications should follow this practice.
+</li></ul>
+</li><li> Applications should provide command line option <i>-d&lt;level&gt;,--debug=&lt;level&gt;</i> for printing log messages to standard output.
+</li><li> Preferred location for the application runtime configuration files is /etc/opt/Nokia/SS_Test<i>Name</i>/etc/
+</li><li> Preferred location for the application log files is (node-local) /var/log/SS_Test<i>Name</i>/
+<ul><li> If there are many instances of the application running in different nodes, and they write separate log files, each log file should have the node name included in the file name:
+</li></ul>
+</li></ul>
+<pre> /var/log/SS_TestSIP/TestSipServer-result-AS-0.log
+ /var/log/SS_TestSIP/TestSipServer-result-AS-1.log
+</pre>
+<ul><li> Log files must be opened for writing in append mode.
+</li><li> Read-only NFS is used in Charm and in the later builds for system image
+<ul><li> /etc/opt/Nokia/SS_Test<i>Name</i>/ resides in system image
+</li><li> Diskless nodes are unaffected. They can write data and do locking as they have used to.
+</li><li> Applications running in CLA nodes must care if they write to system image. All writes to system image have to go through _active_ CLAs local sysimg mount point.
+</li><li> It is not possible to write to sysimg in inactive CLA (over NFS)
+</li><li> Meaning: 
+</li></ul>
+</li></ul>
+<pre> /var/mnt/remote/sysimg &lt;-- Will be READ ONLY on CLA nodes
+ /var/mnt/local/sysimg  &lt;-- Is writable on ACTIVE CLA node
+</pre>
+<h2> <span class="mw-headline" id="Version_information_of_test_applications"> Version information of test applications </span></h2>
+<p>Test applications shall have a command-line parameter -v for printing the version information as it is known in the used version control system.
+</p>
+<ul><li> SVN: Use for example "%Id%" (more info in SVN manual)
+</li><li> Clearcase: 
+<ul><li> For textfiles, follow the instructions given in the <a rel="nofollow" class="external text" href="http://pi.nokia.com/urn.htm?id=09006c378016d35e&amp;DMW_DOCBASE=espoo11&amp;auth=T&amp;version=current&amp;document_id=13-127169">RPM grannyguide for FlexiServer product family</a>
+</li><li> For executables, this approach is not working. Simplest possible workaround is having a version.txt file that gets updated and is then referred or read+printed. Another workaround could also use the information which is already in the executable file and can be seen using "objdump --section=.versionlabelinfo -s <i>&lt;my_executable&gt;</i>".
+</li></ul>
+</li></ul>
+<h1> <span class="mw-headline" id="Non-Flexiplatform_specific_applications"> Non-Flexiplatform specific applications </span></h1>
+<h2> <span class="mw-headline" id="Software_Engineering_Environment_2"> Software Engineering Environment </span></h2>
+<ul><li> Applications are stored to our own Subversion server (svn root: <a rel="nofollow" class="external free" href="http://sugar.fp.nsn-rdnet.net/svn/tfrm">http://sugar.fp.nsn-rdnet.net/svn/tfrm</a>)
+<ul><li> New directory should be created in the root of the repository for larger applications. 
+</li><li> Small and one-shot scripts should be stored under Scripts directory.
+</li></ul>
+</li><li> flexiaf5 (that is the FlexiTAF development host) can be used for generic application development.
+<ul><li> Don't use flexiaf5 for CPU-intensive testing, or for any purposes that use resources like sockets or IO extensively.
+</li></ul>
+</li></ul>
+<h1> <span class="mw-headline" id="Traffic_generators"> Traffic generators </span></h1>
+<p>Traffic generator is catch-all term for all test applications that run for a while, generate or listen to some kind of messages and measure the traffic. Examples: Plain TCP client/server (SS_TestSIP), Protocol specific tool (SS_TestDIA), application for generating log messages/alarms/notifications (SS_TestSNMP).
+</p><p>All traffic generators must be stable and reliable enough for stability testing. It must be taken into account that the application may run for hundreds of hours and during that time it may generate billions of messages. The traffic generator is not the only application running in the target during the test.
+</p>
+<h2> <span class="mw-headline" id="Input"> Input </span></h2>
+<ul><li> Application must be configurable. 
+<ul><li> Send rate must be configurable. Measuring only maximum throughput in a busy loop is not sufficient.
+</li></ul>
+</li></ul>
+<h2> <span class="mw-headline" id="Output_2"> Output </span></h2>
+<ul><li> Application should write separate status log and result log.
+</li><li> Status log is echoed to standard output if a command line option <i>-d &lt;level&gt;, --debug=&lt;level&gt;</i> is given. 
+</li><li> Result log is echoed to standard output if a command line option <i>-r &lt;level&gt;, --result=&lt;level&gt;</i> is given. 
+</li><li> Each line in a log file must start with a timestamp. 
+<ul><li> Format: <i>yyyy-mm-dd hh:mm:ss</i> (Simplified <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a>, date +"%F&#160;%T"). 
+</li><li> Fractions of second can be appended if finer granularity is required. They are separated from full seconds by a period mark (<i>hh:mm:ss.sss</i>).
+</li></ul>
+</li><li> When the application terminates, summary of the generated traffic must be printed to the status log. 
+<ul><li> This summary includes information like total number of messages/transactions, total amount of transferred data in megabytes, average message rate, number of reconnections, maximum number of associations, errors per second etc.
+</li></ul>
+</li><li> Result log consists of interesting statistical data that describes the traffic. Lines are printed with configurable fixed interval.
+<ul><li> Data is organized in fixed-width columns. 
+</li><li> A header line must be printed in the beginning of data and can be repeated on regular interval.
+<ul><li> Header printing interval should be configurable.
+</li></ul>
+</li><li> The information on each line should be the measured traffic after the previous line. Output columns with cumulative data should be used with discretion.
+</li><li> Printing is allowed only with pre-defined intervals and timestamps (see table below).
+</li></ul>
+</li><li> Allowed printing intervals and timestamps for result log
+</li></ul>
+<table class="wikitable">
+
+<tr>
+<th>Output Interval </th>
+<th> When to Print
+</th></tr>
+<tr>
+<td>1 s	</td>
+<td> hh:mm:00, hh:mm:01 … hh:mm:59
+</td></tr>
+<tr>
+<td>5 s	</td>
+<td> hh:mm:00, hh:mm:05 … hh:mm:55
+</td></tr>
+<tr>
+<td>10 s	</td>
+<td> hh:mm:00, hh:mm:10 … hh:mm:50
+</td></tr>
+<tr>
+<td>30 s	</td>
+<td> hh:mm:00, hh:mm:30
+</td></tr>
+<tr>
+<td>1 min	</td>
+<td> hh:00:00, hh:01:00 … hh:59:00
+</td></tr>
+<tr>
+<td>5 min	</td>
+<td> hh:00:00, hh:05:00 … hh:55:00
+</td></tr>
+<tr>
+<td>10 min	</td>
+<td> hh:00:00, hh:10:00 … hh:50:00
+</td></tr>
+<tr>
+<td>30 min	</td>
+<td> hh:00:00, hh:30:00
+</td></tr>
+<tr>
+<td>1 h	</td>
+<td> 00:00:00, 01:00:00 … 23:00:00
+</td></tr></table>
+<ul><li> Example of status log:
+</li></ul>
+<pre> 2000-01-01 08:00:00 TestAppl starting 
+ 2000-01-01 08:00:00 Listening to port 1234
+ 2000-01-01 08:00:03 Accepted connection
+ 2000-01-01 08:00:03 Accepted connection  
+ 2000-01-01 08:00:40 Caught SIGTERM. Terminating...
+ 2000-01-01 08:00:40 Closed connection
+ 2000-01-01 08:00:40 Closed connection
+ 2000-01-01 08:00:40 Total numer of messages received: 4000 msgs
+ 2000-01-01 08:00:40 Total numer of payload received:  145 MB
+ 2000-01-01 08:00:40 Messages/sec:                     112.22 msgs/s
+ 2000-01-01 08:00:40 Payload/sec:                      23.234 MB/s
+</pre>
+<ul><li> Example of result log:
+</li></ul>
+<pre> time                     msgs/sec    errors/sec 
+ 2000-01-01 08:00:00           0.6           0.0 
+ 2000-01-01 08:00:10           0.4           0.0 
+ 2000-01-01 08:00:20          15.3           0.2
+ 2000-01-01 08:00:30          18.3           1.0 
+ 2000-01-01 08:00:40          12.3           4.6
+</pre>
+<ul><li> LibTFRM contains classes for producing output that conforms with this definition.
+</li></ul>
+<h2> <span class="mw-headline" id="Reliability"> Reliability </span></h2>
+<ul><li> Choose datatypes wisely. Ints do overflow. Double cannot be incremented by 1 much longer than int. Long long is usually sufficient for counters.
+</li><li> Try to keep the application footprint small
+<ul><li>Do not use busy loops
+</li><li>Test memory leaks
+</li><li>Avoid excessive file I/O
+</li><li>Do not allocate more memory than necessary
+</li></ul>
+</li></ul>
+
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 110/1000000
+Preprocessor generated node count: 116/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key wikidb:pcache:idhash:1758-0!*!*!!en!*!* and timestamp 20240823044240 -->
+</div><div class="printfooter">
+Retrieved from "<a href="index6a4d.html?title=TFRM_Software_Development_Guide&amp;oldid=7063">http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=TFRM_Software_Development_Guide&amp;oldid=7063</a>"</div>
+		<div id='catlinks' class='catlinks catlinks-allhidden'></div>		<!-- end content -->
+				<div class="visualClear"></div>
+	</div>
+</div></div>
+<div id="column-one">
+	<h2>Navigation menu</h2>
+	<div id="p-cactions" class="portlet" role="navigation">
+		<h3>Views</h3>
+		<div class="pBody">
+			<ul>
+				<li id="ca-nstab-main" class="selected"><a href="index.php/TFRM_Software_Development_Guide.html" primary="1" context="subject" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="indexd309.html?title=Talk:TFRM_Software_Development_Guide&amp;action=edit&amp;redlink=1" primary="1" context="talk" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-edit"><a href="index74e2.html?title=TFRM_Software_Development_Guide&amp;action=edit" primary="1" title="You can edit this page. Please use the preview button before saving [e]" accesskey="e">Edit</a></li>
+				<li id="ca-history"><a href="index1a8c.html?title=TFRM_Software_Development_Guide&amp;action=history" rel="archives" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal" role="navigation">
+		<h3>Personal tools</h3>
+		<div class="pBody">
+			<ul>
+				<li id="pt-anonuserpage"><a href="index.php/User_10.143.81.html" class="new" title="The user page for the IP address you are editing as [.]" accesskey=".">10.143.81.182</a></li>
+				<li id="pt-anontalk"><a href="index.php/User_talk_10.143.81.html" class="new" title="Discussion about edits from this IP address [n]" accesskey="n">Talk for this IP address</a></li>
+				<li id="pt-createaccount"><a href="index9a9e.html?title=Special:UserLogin&amp;returnto=TFRM+Software+Development+Guide&amp;returntoquery=printable%3Dyes&amp;type=signup">Create account</a></li>
+				<li id="pt-anonlogin"><a href="indexfee2.html?title=Special:UserLogin&amp;returnto=TFRM+Software+Development+Guide&amp;returntoquery=printable%3Dyes" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo" role="banner">
+<a href="index.php/Main_Page.html" style="background-image: url(skins/common/images/wiki.png);" title="Visit the main page"></a>
+	</div>
+	<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+			<ul>
+				<li id="n-mainpage-description"><a href="index.php/Main_Page.html" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+				<li id="n-portal"><a href="index.php/SugarWiki_Community_portal.html" title="About the project, what you can do, where to find things">Community portal</a></li>
+				<li id="n-currentevents"><a href="index.php/SugarWiki_Current_events.html" title="Find background information on current events">Current events</a></li>
+				<li id="n-recentchanges"><a href="index.php/Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+				<li id="n-randompage"><a href="index.php/POC_(Chengdu).html" title="Load a random page [x]" accesskey="x">Random page</a></li>
+				<li id="n-help"><a href="index.php/Help_Contents.html" title="The place to find out">Help</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet" role="search">
+		<h3><label for="searchInput">Search</label></h3>
+		<div id="searchBody" class="pBody">
+			<form action="http://sugar.fp.nsn-rdnet.net/wiki/index.php" id="searchform">
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input type="search" name="search" title="Search SugarWiki [f]" accesskey="f" id="searchInput" />
+				<input type="submit" name="go" value="Go" title="Go to a page with this exact name if exists" id="searchGoButton" class="searchButton" />&#160;
+				<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton" />
+			</form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb" role="navigation">
+		<h3>Toolbox</h3>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="index.php/Special_WhatLinksHere/TFRM_Software_Development_Guide.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="index.php/Special_RecentChangesLinked/TFRM_Software_Development_Guide.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+				<li id="t-specialpages"><a href="index.php/Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-permalink"><a href="index6a4d.html?title=TFRM_Software_Development_Guide&amp;oldid=7063" title="Permanent link to this revision of the page">Permanent link</a></li>
+				<li id="t-info"><a href="index10f8.html?title=TFRM_Software_Development_Guide&amp;action=info">Page information</a></li>
+			</ul>
+		</div>
+	</div>
+</div><!-- end of the left (by default at least) column -->
+<div class="visualClear"></div>
+<div id="footer" role="contentinfo">
+	<div id="f-poweredbyico">
+		<a href="http://www.mediawiki.org/"><img src="skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>
+	</div>
+	<ul id="f-list">
+		<li id="lastmod"> This page was last modified on 17 September 2008, at 12:34.</li>
+		<li id="viewcount">This page has been accessed 599 times.</li>
+		<li id="privacy"><a href="index.php/SugarWiki_Privacy_policy.html" title="SugarWiki:Privacy policy">Privacy policy</a></li>
+		<li id="about"><a href="index.php/SugarWiki_About.html" title="SugarWiki:About">About SugarWiki</a></li>
+		<li id="disclaimer"><a href="index.php/SugarWiki_General_disclaimer.html" title="SugarWiki:General disclaimer">Disclaimers</a></li>
+	</ul>
+</div>
+</div>
+<script>if(window.mw){
+mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi"], null, true);
+}</script>
+<script src="load17b7.html?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;printable=1&amp;skin=monobook&amp;*"></script>
+<!-- Served in 0.215 secs. --></body>
+<!-- Mirrored from sugar.fp.nsn-rdnet.net/wiki/index.php?title=TFRM_Software_Development_Guide&printable=yes by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 23 Aug 2024 05:17:30 GMT -->
+</html>

@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+
+<!-- Mirrored from sugar.fp.nsn-rdnet.net/wiki/index.php?title=FlexiTAF_Software_Development_Guide&printable=yes by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 23 Aug 2024 05:17:51 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>FlexiTAF Software Development Guide - SugarWiki</title>
+<meta charset="UTF-8" />
+<meta name="generator" content="MediaWiki 1.21.1" />
+<meta name="robots" content="noindex,follow" />
+<link rel="alternate" type="application/x-wiki" title="Edit" href="index0556.html?title=FlexiTAF_Software_Development_Guide&amp;action=edit" />
+<link rel="edit" title="Edit" href="index0556.html?title=FlexiTAF_Software_Development_Guide&amp;action=edit" />
+<link rel="shortcut icon" href="http://sugar.fp.nsn-rdnet.net/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.html" title="SugarWiki (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="api251f.html?action=rsd" />
+<link rel="alternate" type="application/atom+xml" title="SugarWiki Atom feed" href="index890f.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="load618b.html?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cskins.monobook&amp;only=styles&amp;printable=1&amp;skin=monobook&amp;*" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="load711e.html?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;printable=1&amp;skin=monobook&amp;*" />
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: wikidb:resourceloader:filter:minify-css:7:7a3748d34e6456ae8d0f053363f745f7 */</style>
+
+<script src="loadaa7b.html?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;printable=1&amp;skin=monobook&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"FlexiTAF_Software_Development_Guide","wgTitle":"FlexiTAF Software Development Guide","wgCurRevisionId":8746,"wgArticleId":1773,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"FlexiTAF_Software_Development_Guide","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"monobook","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,"watchlistdays":3,
+"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: wikidb:resourceloader:filter:minify-js:7:a02a7fa766593347c4dbb130a7c3803e */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-FlexiTAF_Software_Development_Guide skin-monobook action-view">
+<div id="globalWrapper">
+<div id="column-content"><div id="content" class="mw-body-primary" role="main">
+	<a id="top"></a>
+	
+	<h1 id="firstHeading" class="firstHeading" lang="en"><span dir="auto">FlexiTAF Software Development Guide</span></h1>
+	<div id="bodyContent" class="mw-body">
+		<div id="siteSub">From SugarWiki</div>
+		<div id="contentSub"></div>
+		<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+		<!-- start content -->
+<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Introduction"><span class="tocnumber">1</span> <span class="toctext">Introduction</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Requirements"><span class="tocnumber">2</span> <span class="toctext">Requirements</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Use_cases"><span class="tocnumber">3</span> <span class="toctext">Use cases</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Design"><span class="tocnumber">4</span> <span class="toctext">Design</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Domain-model"><span class="tocnumber">4.1</span> <span class="toctext">Domain-model</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Component"><span class="tocnumber">4.2</span> <span class="toctext">Component</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Repository"><span class="tocnumber">4.3</span> <span class="toctext">Repository</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Testing"><span class="tocnumber">5</span> <span class="toctext">Testing</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Building"><span class="tocnumber">6</span> <span class="toctext">Building</span></a>
+<ul>
+<li class="toclevel-2 tocsection-10"><a href="#Setting_up_environment"><span class="tocnumber">6.1</span> <span class="toctext">Setting up environment</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Profiles"><span class="tocnumber">6.2</span> <span class="toctext">Profiles</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Building_flexitaf-server_assembly"><span class="tocnumber">6.3</span> <span class="toctext">Building flexitaf-server assembly</span></a>
+<ul>
+<li class="toclevel-3 tocsection-13"><a href="#Creating_source_package_of_external_dependencies"><span class="tocnumber">6.3.1</span> <span class="toctext">Creating source package of external dependencies</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-14"><a href="#Building_flexitaf-cli_assembly"><span class="tocnumber">6.4</span> <span class="toctext">Building flexitaf-cli assembly</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Running_flexitaf-server"><span class="tocnumber">6.5</span> <span class="toctext">Running flexitaf-server</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#Running_flexitaf-webui"><span class="tocnumber">6.6</span> <span class="toctext">Running flexitaf-webui</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#Running_flexitaf-cli"><span class="tocnumber">6.7</span> <span class="toctext">Running flexitaf-cli</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#Running_flexitaf-updatemanager"><span class="tocnumber">6.8</span> <span class="toctext">Running flexitaf-updatemanager</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="#Running_Klocwork_Insight_for_static_code_analysis"><span class="tocnumber">6.9</span> <span class="toctext">Running Klocwork Insight for static code analysis</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="#Useful_information"><span class="tocnumber">6.10</span> <span class="toctext">Useful information</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-21"><a href="#Maintenance"><span class="tocnumber">7</span> <span class="toctext">Maintenance</span></a>
+<ul>
+<li class="toclevel-2 tocsection-22"><a href="#Overall_release_process"><span class="tocnumber">7.1</span> <span class="toctext">Overall release process</span></a></li>
+<li class="toclevel-2 tocsection-23"><a href="#Releasing_FlexiTAF"><span class="tocnumber">7.2</span> <span class="toctext">Releasing FlexiTAF</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-24"><a href="#Debugging"><span class="tocnumber">8</span> <span class="toctext">Debugging</span></a>
+<ul>
+<li class="toclevel-2 tocsection-25"><a href="#Profiling"><span class="tocnumber">8.1</span> <span class="toctext">Profiling</span></a>
+<ul>
+<li class="toclevel-3 tocsection-26"><a href="#flexitaf-cli"><span class="tocnumber">8.1.1</span> <span class="toctext">flexitaf-cli</span></a></li>
+<li class="toclevel-3 tocsection-27"><a href="#flexitaf-server"><span class="tocnumber">8.1.2</span> <span class="toctext">flexitaf-server</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-28"><a href="#JMX"><span class="tocnumber">8.2</span> <span class="toctext">JMX</span></a>
+<ul>
+<li class="toclevel-3 tocsection-29"><a href="#Hibernate"><span class="tocnumber">8.2.1</span> <span class="toctext">Hibernate</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-30"><a href="#Further_development"><span class="tocnumber">9</span> <span class="toctext">Further development</span></a>
+<ul>
+<li class="toclevel-2 tocsection-31"><a href="#Refactoring_tasks"><span class="tocnumber">9.1</span> <span class="toctext">Refactoring tasks</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Introduction"> Introduction </span></h1>
+<h1> <span class="mw-headline" id="Requirements"> Requirements </span></h1>
+<h1> <span class="mw-headline" id="Use_cases"> Use cases </span></h1>
+<h1> <span class="mw-headline" id="Design"> Design </span></h1>
+<p><a rel="nofollow" class="external text" href="https://sharenet-ims.inside.nokiasiemensnetworks.com/Open/397514123">Tfrm-util design overview</a>
+</p><p><a rel="nofollow" class="external text" href="https://sharenet-ims.inside.nokiasiemensnetworks.com/Open/397523454">FlexiTAF design overview</a>
+</p>
+<h2> <span class="mw-headline" id="Domain-model"> Domain-model </span></h2>
+<p>All domain model entities have to follow following rules:
+</p>
+<ul><li>If entity can be located from somewhere declare inner IMapper interface for it.
+</li><li>IMapper method arguments should use types which implement QName.
+</li><li>In static finder method arguments should use types which implement ResourceLocation.
+</li><li>If entity can locate itself create method <b>public static Type find(TypeResourceName name)</b>. The method must always return single instance.
+</li><li>If entity can locate all instances of itself create method <b>public static Set&lt;Type&gt; findAll(ResourceLocation loc)</b>.
+</li><li>If entity can locate all names of itself create method <b>public static Set&lt;TypeResourceName&gt; findNames()</b>.
+</li><li>If entity instance can be persisted in a way that new entry will be created for each call create method <b>public static DataResourceName add(Type instance)</b>. The object which was passed as an argument must stay unchanged.
+</li><li>If entity instance can be persisted in a way that existing entry will be updated create method <b>public void save()</b>. If instance is "new" save-call is allowed to create new entry, but subsequent calls must only update it.
+</li><li>If entity can be deleted create method <b>public static void delete(TypeResourceName name)</b>.
+</li><li>For IMapper methods you can apply same rules but always append method names with domain type name. For example: <b>JobResult findJobResult(DataName name)</b>. This is because same repository might implement multiple IMapper interfaces.
+</li></ul>
+<h2> <span class="mw-headline" id="Component"> Component </span></h2>
+<ul><li>Component is an pluggable object which can perform some actions. Components can have dependencies for each other but circular dependencies must be avoided. Each component defines some interface which other components depend of, for example <b>IRepositoryRegistry</b>. To make flexitaf able to manage component it needs to implement IComponent-interface. Flexitaf uses Booter to startup and manage components. Components can access dependencies using ComponentRegistry, which is only singleton instance in flexitaf.
+</li></ul>
+<h2> <span class="mw-headline" id="Repository"> Repository </span></h2>
+<ul><li>All repositories must implement IRepository-interface.
+</li><li>Repositories are managed by RepositoryRegistry, which is controlled by RepositoryRegistryComponent.
+</li><li>If some data cannot be located from repository and the method is returning collection of data, then method should return empty collection. If the method is returning single value, it should throw DataNotFoundException.
+</li></ul>
+<h1> <span class="mw-headline" id="Testing"> Testing </span></h1>
+<h1> <span class="mw-headline" id="Building"> Building </span></h1>
+<h2> <span class="mw-headline" id="Setting_up_environment">Setting up environment</span></h2>
+<ul><li>Add following settings to your maven2 config ($HOME/.m2/settings.xml)
+</li></ul>
+<pre>  &lt;profiles&gt;
+   &lt;profile&gt;
+     &lt;id&gt;flexitaf-development&lt;/id&gt;
+     &lt;properties&gt;
+       &lt;flexitaf.release.filter.properties&gt;/home/&lt;yourname&gt;/flexitaf-dev/dev.filter.properties&lt;/flexitaf.release.filter.properties&gt;
+     &lt;/properties&gt;
+   &lt;/profile&gt;
+ &lt;/profiles&gt;
+ &lt;activeProfiles&gt;
+   &lt;activeProfile&gt;flexiaf5-env&lt;/activeProfile&gt;
+ &lt;/activeProfiles&gt;
+</pre>
+<ul><li>Create necessary databases. Easiest way to create necessary databases is to execute following scripts. You can also use same scripts when you want to update your development database to new schema. (Note that scripts expect to find flexitaf sourcecodes from $HOME/flexitaf. You should create symlink there which points to your local copy):
+</li></ul>
+<pre>sh /opt/flexitaf-dev/update_webprofiledb_schema.sh
+sh /opt/flexitaf-dev/update_jobdb_schema.sh
+sh /opt/flexitaf-dev/update_resultdb_schema.sh
+sh /opt/flexitaf-dev/update_targetdb_schema.sh
+</pre>
+<ul><li>Place testcases to /localhome/&lt;username&gt;/testcases
+</li></ul>
+<ul><li>Create /home/&lt;yourname&gt;/flexitaf-dev/dev.filter.properties and modify them for your needs. These are used to customized configuration files when flexitaf-server assembly is being created. You can have any amount of properties. Just remember that the incrementing count must start from 30.
+</li></ul>
+<pre>development.properties=wrapper.java.additional.30=-Dcom.nokia.flexi.flexitaf.repository.path=/localhome/&lt;yourname&gt;/testcases\n\
+wrapper.java.additional.31=-Dcom.nokia.flexi.flexitaf.results.path=/localhome/&lt;yourname&gt;/results\n\
+wrapper.java.additional.32=-Dtfrm.datasource.target.url=jdbc:mysql://localhost/&lt;yourname&gt;_flexitaf_target\n\
+wrapper.java.additional.33=-Dtfrm.datasource.result.url=jdbc:mysql://localhost/&lt;yourname&gt;_flexitaf_result\n\
+wrapper.java.additional.34=-Dtfrm.datasource.user=&lt;yourname&gt;\n\
+wrapper.java.additional.35=-Dtfrm.datasource.password=password\n\
+wrapper.java.additional.36=-Dtfrm.datasource.driver=com.mysql.jdbc.Driver\n\
+wrapper.java.additional.37=-Dcom.nokia.flexi.flexitaf.scheduler.quartz.url=jdbc:mysql://localhost/&lt;yourname&gt;_flexitaf_job\n\
+wrapper.java.additional.38=-Dcom.nokia.flexi.flexitaf.scheduler.quartz.username=&lt;yourname&gt;\n\
+wrapper.java.additional.39=-Dcom.nokia.flexi.flexitaf.scheduler.quartz.password=password\n\
+wrapper.java.additional.40=-Dcom.nokia.flexi.tfrm.util.config.configFilePath=/opt/flexitaf-dev/flexitaf.xml\n\
+wrapper.java.additional.41=-Djava.util.logging.config.file=/home/&lt;yourname&gt;/flexitaf-dev/flexitaf.logging.properties\n\
+wrapper.java.additional.42=-Dcom.nokia.flexi.flexitaf.webui.database.name=&lt;yourname&gt;_flexitaf_web\n\
+wrapper.java.additional.43=-Dflexitaf.component.jmx.rmi-registry-port=&lt;your port&gt;\n\
+wrapper.java.additional.44=-Djetty.port=&lt;your port&gt;\n\
+wrapper.java.additional.45=-Dcom.nokia.flexi.tfrm.util.hibernate.jmx=false\n\
+wrapper.java.additional.46=-Dcom.nokia.flexi.flexitaf.component.jmx.enabled=false\n\
+wrapper.java.additional.47=-Dcom.nokia.flexi.flexitaf.booter.jmx.enabled=false
+</pre>
+<p><br />
+</p>
+<ul><li>Create /home/&lt;yourname&gt;/flexitaf-dev/flexitaf.logging.properties. This are used by flexitaf-server. For example:
+</li></ul>
+<pre>handlers= java.util.logging.ConsoleHandler
+.level= INFO
+java.util.logging.ConsoleHandler.level = FINEST
+java.util.logging.ConsoleHandler.formatter = java.util.logging.SimpleFormatter
+com.nokia.flexi.flexitaf.level = ALL
+com.nokia.flexi.flexitaf.datamanager.level = INFO
+</pre>
+<h2> <span class="mw-headline" id="Profiles">Profiles</span></h2>
+<ul><li>You should always enable flexitaf-dev profile when developing flexitaf. Following global properties are used:
+<ul><li>com.nokia.flexi.tfrm.util.config.configFilePath: Specifies default location for flexitaf config file used during testing.
+</li></ul>
+</li><li>Remember to also enable the host specific profile where you are developing flexitaf.
+</li></ul>
+<h2> <span class="mw-headline" id="Building_flexitaf-server_assembly">Building flexitaf-server assembly</span></h2>
+<ul><li>To build development assembly:
+</li></ul>
+<pre>cd tfrm/flexitaf/flexitaf-modules/flexitaf-server/trunk
+
+mvn clean assembly:directory -Pflexitaf-development,full-release
+</pre>
+<ul><li>You can also use other profiles. Usable distribution profiles are:
+</li></ul>
+<pre>build-provider-release
+full-release
+no-webui-release
+</pre>
+<ul><li>Remember that -Pflexitaf-development property should never be used when constructing real releases
+</li></ul>
+<h3> <span class="mw-headline" id="Creating_source_package_of_external_dependencies">Creating source package of external dependencies</span></h3>
+<ul><li>Package can be created with <b>package-ext-dep-sources</b>-profile
+</li></ul>
+<pre>mvn compile -Pfull-release,package-ext-dep-sources
+</pre>
+<ul><li>Dependencies are included based on the used distribution-profile.
+</li></ul>
+<h2> <span class="mw-headline" id="Building_flexitaf-cli_assembly">Building flexitaf-cli assembly</span></h2>
+<ul><li>To build assembly:
+</li></ul>
+<pre>cd tfrm/flexitaf/flexitaf-modules/flexitaf-cli/trunk/
+
+mvn clean assembly:directory
+</pre>
+<h2> <span class="mw-headline" id="Running_flexitaf-server">Running flexitaf-server</span></h2>
+<ul><li>First build an assembly. From there you can find necessary scripts to start the server. For example with no-webui release in flexiaf5 you would start up server with following command:
+</li></ul>
+<pre>./target/flexitaf-server-1.1.0-SNAPSHOT-no-webui-release.dir/flexitaf-server-1.1.0-SNAPSHOT/bin/linux-x86-64/flexitaf console
+</pre>
+<ul><li>From flexitaf.xml you can define what components will be started:
+</li></ul>
+<pre>   &lt;flexitaf&gt;
+       &lt;booter&gt;
+           &lt;components&gt;
+               &lt;component name="Scheduler" class="com.nokia.flexi.flexitaf.scheduler.SchedulerComponent"/&gt;
+               &lt;component name="BuildProvider" class="com.nokia.flexi.flexitaf.buildprovider.component.BuildProviderComponent"/&gt;
+           &lt;/components&gt;
+       &lt;/booter&gt;
+   &lt;/flexitaf&gt;
+</pre>
+<ul><li>Remember that all you control settings by editing your dev.filter.properties and then recreating assembly.
+</li><li>Typical process when you fix some bug and want to test it is to
+</li></ul>
+<pre>1) Install fixed component using mvn install
+2) Recreate flexitaf-server assembly
+3) Run start script
+</pre>
+<h2> <span class="mw-headline" id="Running_flexitaf-webui">Running flexitaf-webui</span></h2>
+<ul><li>Follow instruction of flexitaf-server building <a href="index.php/FlexiTAF_Software_Development_Guide.html#Building_flexitaf-server_assembly" title="FlexiTAF Software Development Guide">FlexiTAF_Software_Development_Guide#Building_flexitaf-server_assembly</a> and running it<a href="index.php/FlexiTAF_Software_Development_Guide.html#Running_flexitaf-server" title="FlexiTAF Software Development Guide">FlexiTAF_Software_Development_Guide#Running_flexitaf-server</a>.
+</li><li>Create symlinks to your public_html which points to webui-module, testcases and results. For example:
+</li></ul>
+<pre>mkdir -p $HOME/public_html
+ln -s $HOME/flexitaf/flexitaf-modules/flexitaf-server/trunk/target/flexitaf-server-1.2.1-SNAPSHOT-full-release.dir/flexitaf-server-1.2.1-SNAPSHOT/modules/webui $HOME/public_html/flexitaf
+ln -s /localhome/$USER/testcases $HOME/public_html/testcases
+ln -s /localhome/$USER/results $HOME/public_html/results
+</pre>
+<ul><li>Create .htaccess file to $HOME/public_html/
+</li></ul>
+<pre>AuthName "FlexiTAF WebUI"
+AuthType Basic
+AuthUserFile "/etc/odyssey_passwd"
+AuthGroupFile "/etc/odyssey_groups"
+require group twausers
+</pre>
+<ul><li>Change your flexitaf-server-&lt;version&gt;-SNAPSHOT configuration:
+</li></ul>
+<pre>Change JETTY_PORT value in conf/webuidefault.php to the same value as in your dev.filter.properties file.
+Create "logs" directory if you want wrapper and webui logs to be created. Give write access to apache or just "chmod a+w logs".
+Change wrapper.conf (optional). In flexiaf5 you can enable 64bit stuff like in sugar.
+</pre>
+<h2> <span class="mw-headline" id="Running_flexitaf-cli">Running flexitaf-cli</span></h2>
+<ul><li>First build an assembly. From there you can find necessary scripts to start the client. For example:
+</li></ul>
+<pre>target/flexitaf-cli-1.1.0-SNAPSHOT-release.dir/flexitaf-cli-1.1.0-SNAPSHOT/bin/linux/afcli --configfile /opt/flexiaf-dev/flexitaf_cli_user.xml
+</pre>
+<ul><li>You can control settings by exporting following environment variables:
+</li></ul>
+<pre>FLEXITAF_CLI_OPTS (parameters passed to Java)
+FLEXITAF_CLI_PROPS (properties passed to Java)
+</pre>
+<ul><li>Usually it is good idea to create a script to $HOME/flexitaf-dev and source it whenever you are debugging something with AFCLI.
+</li></ul>
+<h2> <span class="mw-headline" id="Running_flexitaf-updatemanager">Running flexitaf-updatemanager</span></h2>
+<ul><li>Follow the instructions how to build flexitaf-server assembly. From there you can find necessary start scripts. For example:
+</li></ul>
+<pre>./target/flexitaf-server-1.1.0-SNAPSHOT-no-webui-release.dir/flexitaf-server-1.1.0-SNAPSHOT/bin/linux-x86-64/updatemanager
+</pre>
+<ul><li>You can control settings by exporting following environment variables:
+</li></ul>
+<pre>FLEXITAF_OPTS (parameters passed to Java)
+FLEXITAF_PROPS (properties passed to Java)
+</pre>
+<ul><li>Usually it is good idea to create a script to $HOME/flexitaf-dev and source it whenever you are debugging something with UpdateManager.
+</li></ul>
+<h2> <span class="mw-headline" id="Running_Klocwork_Insight_for_static_code_analysis">Running Klocwork Insight for static code analysis</span></h2>
+<ul><li>Plugin should be present in the list of build-plugins in the pom.xml (if present in parent pom, will be available for all child poms)
+</li></ul>
+<pre>  &lt;build&gt;
+     ...
+     &lt;plugins&gt;
+        ...
+        &lt;plugin&gt;
+           &lt;groupId&gt;com.klocwork.ps&lt;/groupId&gt;
+           &lt;artifactId&gt;maven-klocwork-plugin&lt;/artifactId&gt;
+           &lt;version&gt;3.0.21&lt;/version&gt;
+        &lt;/plugin&gt;
+     &lt;/plugins&gt;
+  &lt;/build&gt;
+</pre>
+<ul><li>Steps to run the analysis
+<ul><li>kwcheck create --license-host eseelic050.emea.nsn-net.net --license-port 27018  (Once in each component - for each user)
+</li><li>mvn klocwork:analysis
+</li><li>kwcheck list
+</li></ul>
+</li></ul>
+<h2> <span class="mw-headline" id="Useful_information">Useful information</span></h2>
+<ul><li>All intergration test execution should be placed in integration-tests profile. It means that they should be only executed when you explicitly enable that profile.
+</li><li>Unit tests can be skipped with -Ddisable-testing property
+</li></ul>
+<pre>mvn install -Ddisable-testing
+</pre>
+<ul><li>For more info check <a href="index.php/Maven_Guide.html" title="Maven Guide">Maven_Guide</a>
+</li></ul>
+<h1> <span class="mw-headline" id="Maintenance">Maintenance</span></h1>
+<h2> <span class="mw-headline" id="Overall_release_process">Overall release process</span></h2>
+<ul><li>Prepare environment for beta testing to flexiaf3
+<ul><li>Install latest flexitaf-server, flexitaf-cli snapshots to flexiaf3
+</li><li>Install build-provider snapshot to Linsee: esling04 (SVN)
+<ul><li>Use following ports: rmi-registry-port=20010, rmi-interface-port=20009
+</li></ul>
+</li><li>Inform people who would like to test something before release that the flexiaf3 environment is ready
+</li></ul>
+</li><li>Repeat beta testing until all regressions are fixed
+</li><li>Ensure that provided config templates are up-to-date
+</li><li>Update all documentation: TCExec user guide, FlexiTAF user guide, FlexiTAF admin guide
+</li><li>Release documentation and put PDFs to /twafs/utilities/flexitaf/x.x.x/
+</li><li>Write release notes (/twafs/utilities/flexitaf/flexitaf/x.x.x/release-notes.txt) describing
+<ul><li>Fixed issues
+</li><li>Backwards incompatibilities (not API level). (Not yet done in previous release notes)
+</li><li>External tool dependency updates, for example if FlexiTAF now is compatible with Robot 2.1.1 and Selenium 1.1.0.
+</li><li>Necessary config changes for admin and user
+</li></ul>
+</li><li>Release FlexiTAF <a href="index.php/FlexiTAF_Software_Development_Guide.html#Releasing_FlexiTAF" title="FlexiTAF Software Development Guide">FlexiTAF_Software_Development_Guide#Releasing_FlexiTAF</a>
+</li><li>Close milestones and create new ones for the next release.
+</li><li>Store installation bundles to /twafs/utilities/flexitaf/x.x.x.
+</li><li>Inform about maintenance break (usually 1h is enough) to FP users few days earlier. Also mention which services are offline.
+</li><li>Some tasks can be performed before maintenance break to make it shorter:
+<ul><li>Update flexitaf-client to flexiaf1,2,7(/opt/flexitaf-cli-...) and linsee hosts (/home/sanman/flexitaf/flexitaf-cli-...)
+<ul><li>Fix config file (diff it to the previous config file and check what needs to be changed -)
+</li><li>Don't fix symlinks (/usr/local/bin/afcli) yet to point to the latest installation.
+</li></ul>
+</li><li>Update flexitaf-server to sugar
+<ul><li>Fix config file (diff it to the previous config file and check what needs to be changed - remember to change the tcexec version, if there is a new version in the new release)
+</li><li>Update wrapper.conf(diff it to the previous config file and check what needs to be changed)
+</li><li>Don't yet touch /etc/profile, nor move flexitaf-server work-dir.
+</li></ul>
+</li><li>Update flexitaf-build-provider to used Linsee servers
+<ul><li>Installations are in /home/sanman/flexitaf
+</li><li>Fix config files (wrapper.conf, *_flexitaf.xml, *.logging.properties)
+</li><li>Diff previously used starter scripts to latest scripts in install dir and copy or make changes
+</li><li>Create logs directory under flexitaf-server-&lt;version&gt;
+</li><li>Don't yet restart it
+</li></ul>
+</li><li>If new JDK is available, update it also to flexiaf1,2,7 and sugar (JDK6u10 or later).
+</li><li>If new MySQL is available, fetch RPMs to Sugar. Don't yet install them.
+</li><li>If new flexitaf-server requires new versions of some external tools (HIT, Robot, Selenium) prepare these. Don't yet take them into use.
+</li></ul>
+</li><li>Just before the starting of the maintenence break, apply for a new passowrd for flexitaf functional account, and update the same in the config file, for QC Connectivity
+</li><li>Start maintenance break
+<ul><li>Sugar
+<ul><li>Enable FlexiTAF maintenance break redirect from httpd.conf and reload (service httpd reload)
+</li><li>Edit httpd.conf back to original for next restart
+</li></ul>
+</li><li>flexiaf1,2,7
+<ul><li>Replace afcli with maintenance script link (ln -sf /twafs/utilities/flexitaf/afcli_maint_break.sh /usr/local/bin/afcli)
+</li><li>Update JDK if needed
+</li></ul>
+</li><li>Sugar
+<ul><li>Shutdown flexitaf-server (service flexitaf stop)
+</li><li>Shutdown svn mirror script (service svnmirrord stop)
+</li><li>Shutdown svn update script (service svnupdated stop)
+</li><li>Delete old jobs from MySQL job db. "use flexitaf_jobs; delete from QRTZ_SIMPLE_TRIGGERS; delete from QRTZ_TRIGGERS; delete from QRTZ_JOB_DETAILS". (Not needed if quartz scheduler is not being used)
+</li><li>Move work-dir from old install dir to new install dir. (Do not do copy, do move)
+</li><li>Delete old job cache dirs from: $FLEXITAF_SERVER_PATH/work/job-cache
+</li><li>Change the owner of the directories to flexitaf (chown -R flexitaf.twausers setup modules lib bin conf )
+</li><li>Fix /etc/profile paths
+</li><li>Fix symlinks in /wwwroot/secure
+</li><li>Fix svn update script (/twafs/utilities/svnupdate/update_*.sh) paths. (For this step, su to twaroot.Then su back to root)
+</li><li>Run the upgrade script
+<ul><li>su flexitaf
+</li><li>cd /opt/flexitaf-server-1.6.3/setup/linux/
+</li><li>sh upgrade.sh
+</li></ul>
+</li><li>Update MySQL and JDK if needed
+</li><li>Update external tools
+</li></ul>
+</li><li>Used linsee servers (Details in <a href="index.php/TFRM_Admin_guide.html#FlexiTAF_Server" title="TFRM Admin guide">TFRM_Admin_guide#FlexiTAF_Server</a>)
+<ul><li>Update /home/sanman/flexitaf/cli-env.sh
+</li><li>Update env scripts: /home/sanman/flexitaf/env_linsee...
+</li><li>Source first required env script: env_linsee_cc.sh or env_linsee_svn.sh under /home/sanman/flexitaf/
+</li><li>Stop running build-provider instances from old install dir.
+</li><li>Go to new install dir and start it up
+</li></ul>
+</li><li>Sugar
+<ul><li>Restart HTTPD and remove session data (rm /tmp/sess*)
+</li><li>Start flexitaf-server. Trace the logs for restart or unexpected errors.
+</li><li>Start svn update
+</li><li>Start svn mirror
+</li></ul>
+</li><li>flexiaf1,2,7
+<ul><li>update /etc/profile path, if required
+</li><li>Update symlink /usr/local/bin/afcli
+</li><li>Go to flexiaf1 and check does "afcli list releases" work. If it does then check "afcli -t Rivendell -u root -p rivendell -r 4.charm exec TEST_ANALYZE_001"
+</li></ul>
+</li></ul>
+</li><li>Fix /twafs/utilities/flexitaf/latest symlink and update FlexiTAF links in Sugar main page.
+</li><li>Inform users that maintenance break is over
+</li><li>Fix /twafs/backups/server/script/*.lst files
+</li><li>If there are problems with new installation then fix the issue and create bugfix release (doesn't require any tags to SVN for them).
+</li><li>Update FlexiTAF wiki (<a rel="nofollow" class="external free" href="http://wikis.inside.nokiasiemensnetworks.com/bin/view/Main/FlexiTAF">http://wikis.inside.nokiasiemensnetworks.com/bin/view/Main/FlexiTAF</a>)
+</li><li>Inform other FlexiTAF users (NSN COO RTP PD SVSS FlexiTAF Announce List) that new release is available with links to installation packages and docs.
+</li></ul>
+<ul><li>Some trouble shooting steps
+<ul><li>If "out of memory error is shown"
+<ul><li>Check if wrapper.conf has the correct memory settings 
+</li><li>If flexitaf still does not start, set the result loading threshold (first-job-result-id ) to a higher value to omit older results 
+</li></ul>
+</li><li>If Deadlock occurs
+<ul><li>Check whether httpd service is running properly
+</li></ul>
+</li><li>If the below error occurs during start flexitaf service, ignore it
+<ul><li>Fatal server error:Server is already active for display 2,If this server is no longer running, remove /tmp/.X2-lock and start again.
+</li></ul>
+</li></ul>
+</li></ul>
+<h2> <span class="mw-headline" id="Releasing_FlexiTAF">Releasing FlexiTAF</span></h2>
+<ul><li>Check common release instruction from <a href="index.php/Maven_Guide.html" title="Maven Guide">Maven_Guide</a>
+</li><li>Release projects in following order (if some of them has been changed):
+<ul><li>flexitaf-parent
+<ul><li>Using following instructions <a href="index.php/Maven_Guide.html#Release_single_component" title="Maven Guide">Maven_Guide#Release_single_component</a>
+</li></ul>
+</li><li>flexitaf-core
+<ul><li>Check initial instructions <a href="index.php/Maven_Guide.html#Releasing_multi-module_project" title="Maven Guide">Maven_Guide#Releasing_multi-module_project</a>
+</li></ul>
+</li><li>flexitaf-shared
+<ul><li>Using following instructions for parent <a href="index.php/Maven_Guide.html#Releasing_parent_artifact_individually" title="Maven Guide">Maven_Guide#Releasing_parent_artifact_individually</a>
+</li><li>Using following instructions for components <a href="index.php/Maven_Guide.html#Release_single_component" title="Maven Guide">Maven_Guide#Release_single_component</a>
+</li></ul>
+</li><li>flexitaf-modules
+<ul><li>Using following instructions <a href="index.php/Maven_Guide.html#Release_single_component" title="Maven Guide">Maven_Guide#Release_single_component</a>
+</li><li>And following for flexitaf-webui <a href="index.php/Maven_Guide.html#Releasing_multi-module_project" title="Maven Guide">Maven_Guide#Releasing_multi-module_project</a>
+</li></ul>
+</li></ul>
+</li></ul>
+<ul><li>When we have release all components we still need to build installation packages. First go to the created flexitaf-server tag directory and
+</li></ul>
+<pre>mvn clean assembly:assembly -Prelease-debug,full-release
+mvn clean assembly:assembly -Prelease-debug,build-provider-release
+</pre>
+<ul><li>Copy created archives to /twafs/utilities/flexitaf/x.y.z
+</li><li>After flexitaf-server has been bundled you still need create installation package for flexitaf-cli. Go to the created flexitaf-cli tag directory and
+</li></ul>
+<pre>mvn assembly:assembly -Prelease-debug
+</pre>
+<ul><li>Copy created archives to /twafs/utilities/flexitaf/x.y.z
+</li><li>Release user guides from PI and copy then the same location with archives. TODO: add further instructions later how to export PDFs from PI.
+</li></ul>
+<h1> <span class="mw-headline" id="Debugging">Debugging</span></h1>
+<h2> <span class="mw-headline" id="Profiling">Profiling</span></h2>
+<ul><li>Follow the  basic instruction for profiling <a href="index.php/Maven_Guide.html#AOP_profiles" title="Maven Guide">Maven_Guide#AOP_profiles</a>
+</li></ul>
+<h3> <span class="mw-headline" id="flexitaf-cli">flexitaf-cli</span></h3>
+<ul><li>Follow the basic instruction for running flexitaf-cli <a href="index.php/FlexiTAF_Software_Development_Guide.html#Running_flexitaf-cli" title="FlexiTAF Software Development Guide">FlexiTAF_Software_Development_Guide#Running_flexitaf-cli </a>.
+</li><li>Export following additional properties (note paths might vary):
+<ul><li>export FLEXITAF_CLI_OPTS=-javaagent:target/flexitaf-cli-1.3.0-SNAPSHOT-release.dir/flexitaf-cli-1.3.0-SNAPSHOT/lib/aspectjweaver-1.5.4.jar
+</li><li>export FLEXITAF_CLI_PROPS=-Dorg.aspectj.tracing.factory=default
+</li></ul>
+</li></ul>
+<h3> <span class="mw-headline" id="flexitaf-server">flexitaf-server</span></h3>
+<ul><li>Follow the basic instruction for running flexitaf-server <a href="index.php/FlexiTAF_Software_Development_Guide.html#Running_flexitaf-server" title="FlexiTAF Software Development Guide">FlexiTAF_Software_Development_Guide#Running_flexitaf-server</a>.
+</li><li>Add following additional property to your 'enable-runtime-profiling' profile:
+</li></ul>
+<pre>&lt;profile&gt;
+  &lt;id&gt;enable-runtime-profiling&lt;/id&gt;
+  &lt;properties&gt;
+    &lt;tfrm.aop.config&gt;/home/a4virtan/flexiaf-dev/aop-runtime-profiling.xml&lt;/tfrm.aop.config&gt;
+    &lt;flexitaf.release.filter.properties&gt;/home/a4virtan/flexiaf-dev/dev-prof.filter.properties&lt;/flexitaf.release.filter.properties&gt;
+  &lt;/properties&gt;
+&lt;/profile&gt;
+</pre>
+<ul><li>dev-prof.filter.properties should have same content as dev.filter.properties but it has also two additional properties:
+<ul><li>wrapper.java.additional.33=-javaagent:../../lib/aspectjweaver-1.5.4.jar\n\
+</li><li>wrapper.java.additional.34=-Dorg.aspectj.tracing.factory=default\n\
+</li></ul>
+</li></ul>
+<h2> <span class="mw-headline" id="JMX"> JMX </span></h2>
+<ul><li>FlexiTAF can be monitored using standard JMX-client, for example JConsole. You can reload configuration and restart components using exported MBeans. First following component needs to be configured
+</li></ul>
+<pre>&lt;component name="JMXConnectorServer" class="com.nokia.flexi.flexitaf.component.jmx.JMXComponent"&gt;
+  &lt;configuration url="service:jmx:rmi:///jndi/rmi://:3000/jmxrmi" rmi-registry-port="3000"/&gt;
+&lt;/component&gt;
+</pre>
+<ul><li>url-attribute defines the end-point where we can connect with JMX-client
+</li></ul>
+<pre>jconsole service:jmx:rmi:///jndi/rmi://:3000/jmxrmi
+</pre>
+<h3> <span class="mw-headline" id="Hibernate"> Hibernate </span></h3>
+<ul><li>Hibernate JMX services can be also exported. In dev.filter.properties you need to have following setting
+</li></ul>
+<pre>wrapper.java.additional.33=-Dcom.nokia.flexi.tfrm.util.hibernate.jmx=true\n\
+</pre>
+<ul><li>Furthermore you need to enable statistics collection in the database hibernate configuration (hibernate.cfg.xml)
+</li></ul>
+<pre>&lt;property name="generate_statistics"&gt;true&lt;/property&gt;
+</pre>
+<ul><li>When starting jconsole you need to have hibernate JAR in classpath
+</li></ul>
+<pre>jconsole -J-Djava.class.path=$HOME/.m2/repository/org/hibernate/hibernate/3.2.6.ga/hibernate-3.2.6.ga.jar:$JAVA_HOME/lib/tools.jar:$JAVA_HOME/lib/jconsole.jar service:jmx:rmi:///jndi/rmi://:3000/jmxrmi
+</pre>
+<h1> <span class="mw-headline" id="Further_development">Further development</span></h1>
+<ul><li>Check tickets from <a rel="nofollow" class="external text" href="http://sugar/secure/trac/tfrm">Trac</a>
+</li></ul>
+<h2> <span class="mw-headline" id="Refactoring_tasks">Refactoring tasks</span></h2>
+
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 122/1000000
+Preprocessor generated node count: 128/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key wikidb:pcache:idhash:1773-0!*!0!!en!*!* and timestamp 20240823044249 -->
+</div><div class="printfooter">
+Retrieved from "<a href="indexa8ab.html?title=FlexiTAF_Software_Development_Guide&amp;oldid=8746">http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=FlexiTAF_Software_Development_Guide&amp;oldid=8746</a>"</div>
+		<div id='catlinks' class='catlinks catlinks-allhidden'></div>		<!-- end content -->
+				<div class="visualClear"></div>
+	</div>
+</div></div>
+<div id="column-one">
+	<h2>Navigation menu</h2>
+	<div id="p-cactions" class="portlet" role="navigation">
+		<h3>Views</h3>
+		<div class="pBody">
+			<ul>
+				<li id="ca-nstab-main" class="selected"><a href="index.php/FlexiTAF_Software_Development_Guide.html" primary="1" context="subject" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="index78b8.html?title=Talk:FlexiTAF_Software_Development_Guide&amp;action=edit&amp;redlink=1" primary="1" context="talk" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-edit"><a href="index0556.html?title=FlexiTAF_Software_Development_Guide&amp;action=edit" primary="1" title="You can edit this page. Please use the preview button before saving [e]" accesskey="e">Edit</a></li>
+				<li id="ca-history"><a href="index0524.html?title=FlexiTAF_Software_Development_Guide&amp;action=history" rel="archives" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal" role="navigation">
+		<h3>Personal tools</h3>
+		<div class="pBody">
+			<ul>
+				<li id="pt-anonuserpage"><a href="index.php/User_10.143.81.html" class="new" title="The user page for the IP address you are editing as [.]" accesskey=".">10.143.81.182</a></li>
+				<li id="pt-anontalk"><a href="index.php/User_talk_10.143.81.html" class="new" title="Discussion about edits from this IP address [n]" accesskey="n">Talk for this IP address</a></li>
+				<li id="pt-createaccount"><a href="indexc46f.html?title=Special:UserLogin&amp;returnto=FlexiTAF+Software+Development+Guide&amp;returntoquery=printable%3Dyes&amp;type=signup">Create account</a></li>
+				<li id="pt-anonlogin"><a href="indexc8b3.html?title=Special:UserLogin&amp;returnto=FlexiTAF+Software+Development+Guide&amp;returntoquery=printable%3Dyes" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo" role="banner">
+<a href="index.php/Main_Page.html" style="background-image: url(skins/common/images/wiki.png);" title="Visit the main page"></a>
+	</div>
+	<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+			<ul>
+				<li id="n-mainpage-description"><a href="index.php/Main_Page.html" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+				<li id="n-portal"><a href="index.php/SugarWiki_Community_portal.html" title="About the project, what you can do, where to find things">Community portal</a></li>
+				<li id="n-currentevents"><a href="index.php/SugarWiki_Current_events.html" title="Find background information on current events">Current events</a></li>
+				<li id="n-recentchanges"><a href="index.php/Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+				<li id="n-randompage"><a href="index.php/POC_(Chengdu).html" title="Load a random page [x]" accesskey="x">Random page</a></li>
+				<li id="n-help"><a href="index.php/Help_Contents.html" title="The place to find out">Help</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet" role="search">
+		<h3><label for="searchInput">Search</label></h3>
+		<div id="searchBody" class="pBody">
+			<form action="http://sugar.fp.nsn-rdnet.net/wiki/index.php" id="searchform">
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input type="search" name="search" title="Search SugarWiki [f]" accesskey="f" id="searchInput" />
+				<input type="submit" name="go" value="Go" title="Go to a page with this exact name if exists" id="searchGoButton" class="searchButton" />&#160;
+				<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton" />
+			</form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb" role="navigation">
+		<h3>Toolbox</h3>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="index.php/Special_WhatLinksHere/FlexiTAF_Software_Development_Guide.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="index.php/Special_RecentChangesLinked/FlexiTAF_Software_Development_Guide.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+				<li id="t-specialpages"><a href="index.php/Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-permalink"><a href="indexa8ab.html?title=FlexiTAF_Software_Development_Guide&amp;oldid=8746" title="Permanent link to this revision of the page">Permanent link</a></li>
+				<li id="t-info"><a href="index2593.html?title=FlexiTAF_Software_Development_Guide&amp;action=info">Page information</a></li>
+			</ul>
+		</div>
+	</div>
+</div><!-- end of the left (by default at least) column -->
+<div class="visualClear"></div>
+<div id="footer" role="contentinfo">
+	<div id="f-poweredbyico">
+		<a href="http://www.mediawiki.org/"><img src="skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>
+	</div>
+	<ul id="f-list">
+		<li id="lastmod"> This page was last modified on 22 September 2011, at 10:05.</li>
+		<li id="viewcount">This page has been accessed 875 times.</li>
+		<li id="privacy"><a href="index.php/SugarWiki_Privacy_policy.html" title="SugarWiki:Privacy policy">Privacy policy</a></li>
+		<li id="about"><a href="index.php/SugarWiki_About.html" title="SugarWiki:About">About SugarWiki</a></li>
+		<li id="disclaimer"><a href="index.php/SugarWiki_General_disclaimer.html" title="SugarWiki:General disclaimer">Disclaimers</a></li>
+	</ul>
+</div>
+</div>
+<script>if(window.mw){
+mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi"], null, true);
+}</script>
+<script src="load17b7.html?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;printable=1&amp;skin=monobook&amp;*"></script>
+<!-- Served in 0.183 secs. --></body>
+<!-- Mirrored from sugar.fp.nsn-rdnet.net/wiki/index.php?title=FlexiTAF_Software_Development_Guide&printable=yes by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 23 Aug 2024 05:17:52 GMT -->
+</html>

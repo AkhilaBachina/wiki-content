@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+
+<!-- Mirrored from sugar.fp.nsn-rdnet.net/wiki/index.php?title=Implementation_Guidelines&printable=yes by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 23 Aug 2024 05:16:23 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>Implementation Guidelines - SugarWiki</title>
+<meta charset="UTF-8" />
+<meta name="generator" content="MediaWiki 1.21.1" />
+<meta name="robots" content="noindex,follow" />
+<link rel="alternate" type="application/x-wiki" title="Edit" href="index9d66.html?title=Implementation_Guidelines&amp;action=edit" />
+<link rel="edit" title="Edit" href="index9d66.html?title=Implementation_Guidelines&amp;action=edit" />
+<link rel="shortcut icon" href="http://sugar.fp.nsn-rdnet.net/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.html" title="SugarWiki (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="api251f.html?action=rsd" />
+<link rel="alternate" type="application/atom+xml" title="SugarWiki Atom feed" href="index890f.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="load618b.html?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cskins.monobook&amp;only=styles&amp;printable=1&amp;skin=monobook&amp;*" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="load711e.html?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;printable=1&amp;skin=monobook&amp;*" />
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: wikidb:resourceloader:filter:minify-css:7:7a3748d34e6456ae8d0f053363f745f7 */</style>
+
+<script src="loadaa7b.html?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;printable=1&amp;skin=monobook&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Implementation_Guidelines","wgTitle":"Implementation Guidelines","wgCurRevisionId":4364,"wgArticleId":1345,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Implementation_Guidelines","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"monobook","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,"watchlistdays":3,
+"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: wikidb:resourceloader:filter:minify-js:7:a02a7fa766593347c4dbb130a7c3803e */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Implementation_Guidelines skin-monobook action-view">
+<div id="globalWrapper">
+<div id="column-content"><div id="content" class="mw-body-primary" role="main">
+	<a id="top"></a>
+	
+	<h1 id="firstHeading" class="firstHeading" lang="en"><span dir="auto">Implementation Guidelines</span></h1>
+	<div id="bodyContent" class="mw-body">
+		<div id="siteSub">From SugarWiki</div>
+		<div id="contentSub"></div>
+		<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+		<!-- start content -->
+<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#General_AutomationFrame_related"><span class="tocnumber">1</span> <span class="toctext">General AutomationFrame related</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Use_Metadata"><span class="tocnumber">1.1</span> <span class="toctext">Use Metadata</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Write_portable_testcases"><span class="tocnumber">1.2</span> <span class="toctext">Write portable testcases</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Accessing_environment_variables_in_other_than_bash-scripts"><span class="tocnumber">1.3</span> <span class="toctext">Accessing environment variables in other than bash-scripts</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Do_not_remove_testcase_directories"><span class="tocnumber">1.4</span> <span class="toctext">Do not remove testcase directories</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Use_common_modules"><span class="tocnumber">1.5</span> <span class="toctext">Use common modules</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#TCExec_related"><span class="tocnumber">2</span> <span class="toctext">TCExec related</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="General_AutomationFrame_related"> General AutomationFrame related </span></h1>
+<ul><li> Absolute symlinks should be never used. Instead use relative ones. (e.g.  ../../bin/TestDia.cpp)
+</li><li> Symlinks between releases should not be done. Instead copy the needed files to the current release.
+</li><li> Do not create symlinks to other testcases i.e. FT_TC_001 --&gt; FT_TC_002. This creates duplicate testcases and creates confusion.
+</li><li> Testcase directory name has to be always mapped to the testman testcase id.
+</li><li> Testcases shouldn't write anything to testcase directory.
+</li><li> No hardcoded ip/username/password stuff to the testcases.
+</li><li> Domain directories should only contain other domain directories, testcase directories or common directory. Don't put anything else there.
+</li></ul>
+<h2> <span class="mw-headline" id="Use_Metadata">Use Metadata </span></h2>
+<p>Use XML-files i.e. subsystem_meta.xml for defining dynamic parameters and performing i.e. test environment set-up. These task can include i.e
+</p>
+<ul><li> LDAP changes
+</li><li> File copying 
+</li><li> Building test applications
+</li><li> running some command over SSH in other hosts
+</li></ul>
+<p>Look Automation Framework User Guide for exact syntax for these tasks. <a rel="nofollow" class="external text" href="http://esdoc04nok.ntc.nokia.com/urn.htm?document_id=13-387024&amp;version=current&amp;auth=T&amp;id=09006c3780914462&amp;dmw_docbase=espoo11">AutomationFramework User Guide </a>
+</p>
+<h2> <span class="mw-headline" id="Write_portable_testcases">Write portable testcases </span></h2>
+<p>When you define dynamic variables in metadata, you are writing more portable testcases. The FlexiAF will update the values for the variables at runtime and therefore, these testcases can be run in other environment without any changes. 
+If you would have i.e. hardcoded ip-addresses and passwords this would not be possible.
+</p>
+<h2> <span class="mw-headline" id="Accessing_environment_variables_in_other_than_bash-scripts"> Accessing environment variables in other than bash-scripts </span></h2>
+<p>Environment variables can be accessed in scripting languages e.g. Perl, Python through the tools provided by the language in question. This can be done in Perl through <i>ENV</i> hash
+</p>
+<pre>my $home_directory = $ENV{'HOME'};
+</pre>
+<p>and in Python using <i>os</i> module
+</p>
+<pre>import os
+home_directory = os.environ.get('HOME')
+</pre>
+<h2> <span class="mw-headline" id="Do_not_remove_testcase_directories"> Do not remove testcase directories </span></h2>
+<p>Contact any TFRM team member if you have a need to remove testcases directories from SVN.
+Reason:  You  can not remove them with rm –r, because also the database entries need to be removed.
+</p>
+<h2> <span class="mw-headline" id="Use_common_modules"> Use common modules </span></h2>
+<h1> <span class="mw-headline" id="TCExec_related"> TCExec related </span></h1>
+<ul><li> Use TCExec exit codes correctly <a rel="nofollow" class="external text" href="http://esdoc04nok.ntc.nokia.com/urn.htm?document_id=13-404975&amp;version=current&amp;auth=T&amp;id=09006c3780a315c9&amp;dmw_docbase=espoo11">TCExec Exit Code Guide</a>
+</li><li> TODO: TCExec local script usage rules
+</li></ul>
+
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 26/1000000
+Preprocessor generated node count: 32/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key wikidb:pcache:idhash:1345-0!*!*!!en!*!* and timestamp 20240823044202 -->
+</div><div class="printfooter">
+Retrieved from "<a href="index17b6.html?title=Implementation_Guidelines&amp;oldid=4364">http://sugar.fp.nsn-rdnet.net/wiki/index.php?title=Implementation_Guidelines&amp;oldid=4364</a>"</div>
+		<div id='catlinks' class='catlinks catlinks-allhidden'></div>		<!-- end content -->
+				<div class="visualClear"></div>
+	</div>
+</div></div>
+<div id="column-one">
+	<h2>Navigation menu</h2>
+	<div id="p-cactions" class="portlet" role="navigation">
+		<h3>Views</h3>
+		<div class="pBody">
+			<ul>
+				<li id="ca-nstab-main" class="selected"><a href="index.php/Implementation_Guidelines.html" primary="1" context="subject" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="indexa682.html?title=Talk:Implementation_Guidelines&amp;action=edit&amp;redlink=1" primary="1" context="talk" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-edit"><a href="index9d66.html?title=Implementation_Guidelines&amp;action=edit" primary="1" title="You can edit this page. Please use the preview button before saving [e]" accesskey="e">Edit</a></li>
+				<li id="ca-history"><a href="indexfdfd.html?title=Implementation_Guidelines&amp;action=history" rel="archives" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal" role="navigation">
+		<h3>Personal tools</h3>
+		<div class="pBody">
+			<ul>
+				<li id="pt-anonuserpage"><a href="index.php/User_10.143.81.html" class="new" title="The user page for the IP address you are editing as [.]" accesskey=".">10.143.81.182</a></li>
+				<li id="pt-anontalk"><a href="index.php/User_talk_10.143.81.html" class="new" title="Discussion about edits from this IP address [n]" accesskey="n">Talk for this IP address</a></li>
+				<li id="pt-createaccount"><a href="index2d0b.html?title=Special:UserLogin&amp;returnto=Implementation+Guidelines&amp;returntoquery=printable%3Dyes&amp;type=signup">Create account</a></li>
+				<li id="pt-anonlogin"><a href="indexf2e0.html?title=Special:UserLogin&amp;returnto=Implementation+Guidelines&amp;returntoquery=printable%3Dyes" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo" role="banner">
+<a href="index.php/Main_Page.html" style="background-image: url(skins/common/images/wiki.png);" title="Visit the main page"></a>
+	</div>
+	<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+			<ul>
+				<li id="n-mainpage-description"><a href="index.php/Main_Page.html" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+				<li id="n-portal"><a href="index.php/SugarWiki_Community_portal.html" title="About the project, what you can do, where to find things">Community portal</a></li>
+				<li id="n-currentevents"><a href="index.php/SugarWiki_Current_events.html" title="Find background information on current events">Current events</a></li>
+				<li id="n-recentchanges"><a href="index.php/Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+				<li id="n-randompage"><a href="index.php/POC_(Chengdu).html" title="Load a random page [x]" accesskey="x">Random page</a></li>
+				<li id="n-help"><a href="index.php/Help_Contents.html" title="The place to find out">Help</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet" role="search">
+		<h3><label for="searchInput">Search</label></h3>
+		<div id="searchBody" class="pBody">
+			<form action="http://sugar.fp.nsn-rdnet.net/wiki/index.php" id="searchform">
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input type="search" name="search" title="Search SugarWiki [f]" accesskey="f" id="searchInput" />
+				<input type="submit" name="go" value="Go" title="Go to a page with this exact name if exists" id="searchGoButton" class="searchButton" />&#160;
+				<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton" />
+			</form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb" role="navigation">
+		<h3>Toolbox</h3>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="index.php/Special_WhatLinksHere/Implementation_Guidelines.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="index.php/Special_RecentChangesLinked/Implementation_Guidelines.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+				<li id="t-specialpages"><a href="index.php/Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-permalink"><a href="index17b6.html?title=Implementation_Guidelines&amp;oldid=4364" title="Permanent link to this revision of the page">Permanent link</a></li>
+				<li id="t-info"><a href="index0afa.html?title=Implementation_Guidelines&amp;action=info">Page information</a></li>
+			</ul>
+		</div>
+	</div>
+</div><!-- end of the left (by default at least) column -->
+<div class="visualClear"></div>
+<div id="footer" role="contentinfo">
+	<div id="f-poweredbyico">
+		<a href="http://www.mediawiki.org/"><img src="skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>
+	</div>
+	<ul id="f-list">
+		<li id="lastmod"> This page was last modified on 13 February 2008, at 13:17.</li>
+		<li id="viewcount">This page has been accessed 301 times.</li>
+		<li id="privacy"><a href="index.php/SugarWiki_Privacy_policy.html" title="SugarWiki:Privacy policy">Privacy policy</a></li>
+		<li id="about"><a href="index.php/SugarWiki_About.html" title="SugarWiki:About">About SugarWiki</a></li>
+		<li id="disclaimer"><a href="index.php/SugarWiki_General_disclaimer.html" title="SugarWiki:General disclaimer">Disclaimers</a></li>
+	</ul>
+</div>
+</div>
+<script>if(window.mw){
+mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi"], null, true);
+}</script>
+<script src="load17b7.html?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;printable=1&amp;skin=monobook&amp;*"></script>
+<!-- Served in 0.209 secs. --></body>
+<!-- Mirrored from sugar.fp.nsn-rdnet.net/wiki/index.php?title=Implementation_Guidelines&printable=yes by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 23 Aug 2024 05:16:25 GMT -->
+</html>
